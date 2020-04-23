@@ -17,6 +17,11 @@
   @media screen and (min-width: 540px) { @content; }
 }
 
+// Reboot again
+body {
+  background-color: $light;
+}
+
 // NAV
 
 

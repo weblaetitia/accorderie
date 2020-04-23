@@ -49,30 +49,32 @@ $acco-orange: #E9750A !default;
 //
 //$colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-//$colors: map-merge(
-//  (
-//    «blue»:       $blue,
-//    «indigo»:     $indigo,
-//    «purple»:     $purple,
-//    «pink»:       $pink,
-//    «red»:        $red,
-//    «orange»:     $orange,
-//    «yellow»:     $yellow,
-//    «green»:      $green,
-//    «teal»:       $teal,
-//    «cyan»:       $cyan,
-//    «white»:      $white,
-//    «gray»:       $gray-600,
-//    «gray-dark»:  $gray-800
-//  ),
-//  $colors
-//);
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800,
+    "acco-red": $acco-red,
+    "acco-orange": $acco-orange
+  ),
+  $colors
+);
 //
-//$primary:       $blue !default;
-//$secondary:     $gray-600 !default;
+$primary:       $acco-red !default;
+$secondary:     $gray-600 !default;
 //$success:       $green !default;
 //$info:          $cyan !default;
-//$warning:       $yellow !default;
+$warning:       $acco-orange !default;
 //$danger:        $red !default;
 //$light:         $gray-100 !default;
 //$dark:          $gray-800 !default;
@@ -170,7 +172,7 @@ $acco-orange: #E9750A !default;
 //
 // Settings for the `<body>` element.
 //
-//$body-bg:                   $white !default;
+$body-bg:                   $light !default;
 //$body-color:                $gray-900 !default;
 //
 //

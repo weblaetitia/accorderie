@@ -22,6 +22,8 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
+  --acco-red: #990132;
+  --acco-orange: #E9750A;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -8498,6 +8500,10 @@ a.text-dark:hover, a.text-dark:focus {
 /* --------------------------------------------------------
    Custom application specific styles
    -------------------------------------------------------- */
+body {
+  background-color: #f8f9fa;
+}
+
 #carousel-home {
   background-image: linear-gradient(#FE9300, #990132);
 }
