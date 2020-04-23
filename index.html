@@ -9,99 +9,112 @@
   </head>
   <body>
     <header>
-      <nav id="main-nav" class="navbar navbar-expand-md sticky-top p-0">
-        <button class="navbar-toggler border-0 ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-      
-        <div id="navbarCollapse" class="collapse navbar-collapse row mx-0">
-          <div id="primary-nav" class="col-12 col-sm-7 col-md-12 order-1 order-md-2">
-            <a class="navbar-brand float-left" href="#">
-              <img src="images/accorderie-diois-logo.svg" width="186" height="82" alt="L'accorderie du Diois" class="d-none d-md-block">
-            </a>
-            <ul class="navbar-nav nav flex-column flex-md-row">
-              <li class="nav-item active">
-                <a class="nav-link text-center" href="#">Accueil</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">L'Accorderie du Diois</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item text-center" href="#">Présentation</a>
-                  <a class="dropdown-item text-center" href="#">Gouvernance</a>
-                  <a class="dropdown-item text-center" href="#">On parle de nous</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item text-center" href="#"><i class="fas fa-toolbox"></i>&nbsp;Boîte à outils</a>
-                </div>
+      <div class="container-fluid bg-primary">
+        <div class="container">
+          <nav id="secondary-menu" class="col-12 navbar navbar-expand px-0">
+            <ul class="navbar-nav ml-auto">
+              <li class="">
+                <a class="btn btn-outline-light btn-sm" href="#" role="button"><i class="fas fa-users"></i>&nbsp;Devenir Accordeur</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="#">Actualités</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-center" href="#">Agenda</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">À propos</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item text-center" href="#">Qu'est-ce-qu'une Accorderie ?</a>
-                  <a class="dropdown-item text-center" href="#">Les services</a>
-                  <a class="dropdown-item text-center" href="#">Carte du réseau</a>
-                  <a class="dropdown-item text-center" href="#">La charte</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-center" href="#">Contact</a>
+                <a class="btn btn-warning btn-sm ml-3" href="#" role="button"><i class="fas fa-sign-in-alt"></i>&nbsp;Espace membre</a>
               </li>
             </ul>
-          </div>
-          <div id="secondary-nav" class="col-12 col-sm-5 order-2 order-md-1 col-md-12 d-flex justify-content-center justify-content-md-end flex-column flex-md-row">
-              <button>BTN Devenir Accordeur</button>
-              <button>BTN Espace membre</button> 
-            </div>
-          
+        </nav>
+
         </div>
-      </nav>
+      </div>
+      <div class="container">
+        <nav id="primary-menu" class="navbar navbar-expand px-0">
+          <a class="navbar-brand" href="#">
+            <img src="/images/accorderie-diois-logo.svg" width="180" alt="">
+          </a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  L'Accorderie du Diois
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Présentation</a>
+                  <a class="dropdown-item" href="#">Gouvernance</a>
+                  <a class="dropdown-item" href="#">On parle de nous</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><i class="fas fa-toolbox"></i> Boîte à outils</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nos actualités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Agenda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  À propos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Qu'est-ce qu'une Accorderie&nbsp;?</a>
+                  <a class="dropdown-item" href="#">Les service</a>
+                  <a class="dropdown-item" href="#">Carte du réseau</a>
+                  <a class="dropdown-item" href="#">La charte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
     </header>
 
 <!-- Begin page content -->
 <main role="main">
   
   <!-- Carousel -->
-  <div id="carousel-home" class="carousel slide carousel-fade ml-0 z-index-0 mb-5" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="images/carousel-1600-01.jpg" class="d-block" alt="Témoignage Accordeur">
-          <div class="carousel-caption d-none d-md-block">
-            <blockquote class="blockquote">
-              <p class="mb-0">Grâce à l'Accorderie, mon ordinateur à retrouvé une nouvelle jeunesse. Il est reparti pour 10 ans.</p>
-              <footer class="blockquote-footer"><cite title="Source Title">Jean-Pierre Bufardel</cite></footer>
-            </blockquote>
-          </div>
+  <div class="container-fluid p-0 d-none d-lg-block">
+    <div id="carousel-home" class="carousel slide carousel-fade mb-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-home" data-slide-to="1"></li>
+        <li data-target="#carousel-home" data-slide-to="2"></li>
+      </ol>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/carousel-1600-01.jpg" class="d-block" alt="Témoignage Accordeur">
+            <div class="carousel-caption d-none d-md-block">
+              <blockquote class="blockquote">
+                <p class="mb-0">Grâce à l'Accorderie, mon ordinateur à retrouvé une nouvelle jeunesse. Il est reparti pour 10 ans.</p>
+                <footer class="blockquote-footer"><cite title="Source Title">Jean-Pierre Bufardel</cite></footer>
+              </blockquote>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/carousel-1600-02.jpg" class="d-block" alt="Témoignage Accordeur">
+            <div class="carousel-caption d-none d-md-block">
+              <blockquote class="blockquote">
+                <p class="mb-0">J'ai rencontré des Accordeurs de talent. L'entraide à l'Accorderie du Diois est essentiel sur notre territoire</p>
+                <footer class="blockquote-footer"><cite title="Source Title">Valérie Lorens</cite></footer>
+              </blockquote>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/carousel-1600-03.jpg" class="d-block"  alt="Témoignage Accordeur">
+            <div class="carousel-caption d-none d-md-block">
+              <blockquote class="blockquote">
+                <p class="mb-0">Les ateliers organisés par les Accordeurs du Diois sont riches en rencontres !</p>
+                <footer class="blockquote-footer"><cite title="Source Title">Josephine Reynaud</cite></footer>
+              </blockquote>
+            </div>   
+        </div>
       </div>
-      <div class="carousel-item">
-          <img src="images/carousel-1600-02.jpg" class="d-block" alt="Témoignage Accordeur">
-          <div class="carousel-caption d-none d-md-block">
-            <blockquote class="blockquote">
-              <p class="mb-0">J'ai rencontré des Accordeurs de talent. L'entraide à l'Accorderie du Diois est essentiel sur notre territoire</p>
-              <footer class="blockquote-footer"><cite title="Source Title">Valérie Lorens</cite></footer>
-            </blockquote>
-          </div>
-      </div>
-      <div class="carousel-item">
-          <img src="images/carousel-1600-03.jpg" class="d-block"  alt="Témoignage Accordeur">
-          <div class="carousel-caption d-none d-md-block">
-            <blockquote class="blockquote">
-              <p class="mb-0">Les ateliers organisés par les Accordeurs du Diois sont riches en rencontres !</p>
-              <footer class="blockquote-footer"><cite title="Source Title">Josephine Reynaud</cite></footer>
-            </blockquote>
-          </div>   
-      </div>
-    </div>
-  </div><!-- FIN Carousel -->
+    </div><!-- FIN Carousel -->
+  </div>
+
 
   <!-- Mon container -->
-  <div class="container d-flex flex-column flex-lg-row">
-
-    
+  <div class="container d-flex flex-column flex-lg-row p0">
     <!-- ACTUS -->
     <div id="actus" class="row">
       <div class="col-12">
@@ -195,9 +208,6 @@
         </div>
       </div><!-- FIN ACTUS -->
 
-  
-
-    
     <!-- AGENDA -->
     <div id="agenda" class="row">
 
