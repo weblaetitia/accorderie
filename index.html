@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mon site en Bootstrap & Sass</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav" class="navbar navbar-expand-md sticky-top p-0">
+        <button class="navbar-toggler border-0 ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      
+        <div id="navbarCollapse" class="collapse navbar-collapse row mx-0">
+          <div id="primary-nav" class="col-12 col-sm-7 col-md-12 order-1 order-md-2">
+            <a class="navbar-brand float-left" href="#">
+              <img src="images/accorderie-diois-logo.svg" width="186" height="82" alt="L'accorderie du Diois" class="d-none d-md-block">
+            </a>
+            <ul class="navbar-nav nav flex-column flex-md-row">
+              <li class="nav-item active">
+                <a class="nav-link text-center" href="#">Accueil</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">L'Accorderie du Diois</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item text-center" href="#">Présentation</a>
+                  <a class="dropdown-item text-center" href="#">Gouvernance</a>
+                  <a class="dropdown-item text-center" href="#">On parle de nous</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-center" href="#"><i class="fas fa-toolbox"></i>&nbsp;Boîte à outils</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="#">Actualités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="#">Agenda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">À propos</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item text-center" href="#">Qu'est-ce-qu'une Accorderie ?</a>
+                  <a class="dropdown-item text-center" href="#">Les services</a>
+                  <a class="dropdown-item text-center" href="#">Carte du réseau</a>
+                  <a class="dropdown-item text-center" href="#">La charte</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div id="secondary-nav" class="col-12 col-sm-5 order-2 order-md-1 col-md-12 d-flex justify-content-center justify-content-md-end flex-column flex-md-row">
+              <button>BTN Devenir Accordeur</button>
+              <button>BTN Espace membre</button> 
+            </div>
+          
+        </div>
+      </nav>
+    </header>
+
+<!-- Begin page content -->
+<main role="main">
+  
+  <!-- Carousel -->
+  <div id="carousel-home" class="carousel slide carousel-fade ml-0 z-index-0 mb-5" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="images/carousel-1600-01.jpg" class="d-block" alt="Témoignage Accordeur">
+          <div class="carousel-caption d-none d-md-block">
+            <blockquote class="blockquote">
+              <p class="mb-0">Grâce à l'Accorderie, mon ordinateur à retrouvé une nouvelle jeunesse. Il est reparti pour 10 ans.</p>
+              <footer class="blockquote-footer"><cite title="Source Title">Jean-Pierre Bufardel</cite></footer>
+            </blockquote>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="images/carousel-1600-02.jpg" class="d-block" alt="Témoignage Accordeur">
+          <div class="carousel-caption d-none d-md-block">
+            <blockquote class="blockquote">
+              <p class="mb-0">J'ai rencontré des Accordeurs de talent. L'entraide à l'Accorderie du Diois est essentiel sur notre territoire</p>
+              <footer class="blockquote-footer"><cite title="Source Title">Valérie Lorens</cite></footer>
+            </blockquote>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="images/carousel-1600-03.jpg" class="d-block"  alt="Témoignage Accordeur">
+          <div class="carousel-caption d-none d-md-block">
+            <blockquote class="blockquote">
+              <p class="mb-0">Les ateliers organisés par les Accordeurs du Diois sont riches en rencontres !</p>
+              <footer class="blockquote-footer"><cite title="Source Title">Josephine Reynaud</cite></footer>
+            </blockquote>
+          </div>   
+      </div>
+    </div>
+  </div><!-- FIN Carousel -->
+
+  <!-- Mon container -->
+  <div class="container d-flex flex-column flex-lg-row">
+
+    
+    <!-- ACTUS -->
+    <div id="actus" class="row">
+      <div class="col-12">
+        <h1 class="text-center">Les dernières actus</h1>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/Rapport-moral-I.jpg" class="card-img-top" alt="Dans les actus">
+          <div class="card-body">
+            <p class="h4">Retour sur l'Assemblé Générale du 26 octobre 2019</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer...</p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/Rencontre-chatillons-11-mars.jpg" class="card-img-top" alt="Dans les actus">
+          <div class="card-body">
+            <p class="h4">Première rencontre des Accordeures de Châtillon et communes environnantes</p>
+            <p class="card-text">T16 Accordeur·euse·s sont venus à cette rencontre exceptionnelle au Café des Deux Mondes le 11 mars à 17h30. La neige a empêché les Accordeurs de Boulc et Glandage de venir, mais plusieurs sont venus de Saint Roman et Menglon....</p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/roman-sur-isere.jpg" class="card-img-top" alt="Dans les actus">
+          <div class="card-body">
+            <p class="h4">Rencontre régionale du 9 février à Romans</p>
+            <p class="card-text">Après Sardieu, les Accorderies du Sud-est se sont retrouvées à Romans sur Isère ce 9 février. Xavier et Yves  représentaient notre Accorderie. C'est un moment précieux pour retrouver et échanger avec d'autres membres actifs de ce grand territoire...</p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/matinee-tresor.jpg" class="card-img-top" alt="Dans les actus">
+          <div class="card-body">
+            <p class="h3">Matinée à Aire Trésor</p>
+            <p class="card-text">La matinée du 6 novembre, l’Accorderie s’est déplacée à Aire Trésor. Après une petite présentation de notre association aux salariés de la structure, Stéphanie a animé un atelier de peinture gouache et Odile un atelier de création d’un objet décoratif mexicain, appelé "« "Œil de Dieu"...</p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/apero-joyeu.jpg" class="card-img-top" alt="Dans les actus">
+          <div class="card-body">
+            <p class="h4">Un apéro des nouveaux... jeune et joyeux !
+              </p>
+            <p class="card-text">Cet apéro du 28 novembre ce caractérise par sa jeunesse : une petite dizaine d’accordeur de l’excellent cru 2018 et une grosse dizaine vieux d’un an à quatre ans. Et je ne parle pas des enfants présents...
+              </p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/new-email.png" class="card-img-top" alt="Dans les actus">
+          <div class="card-body">
+            <p class="h4">Nouvelle liste de diffision pour le groupe local de Die</p>
+            <p class="card-text">Mise en place d’une liste de diffusion pour que tous/toutes les accordeur.e.s qui souhaitent suivre ce groupe puissent les contacter et recevoir leurs nouvelles en utilsant une seule adresse...</p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/sardieu.jpg" class="card-img-top" alt="Dans les actus">
+          <div class="card-body">
+            <p class="h4">Rencontre régionale à Sardieu</p>
+            <p class="card-text">Les Accorderies du sud-est se sont retrouvées à Sardieu les 7, 8 et 9 septembre dans une grande maison mise à disposition par la salariée d’Annonay. Nous y sommes rendus à 3 : Yves, Joël et Doreen...</p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/nuit-etoiles.jpg" class="card-img-top" alt="Dans les actus">
+          <div class="card-body">
+            <p class="h4">Une nuit à la belle étoile</p>
+            <p class="card-text">Le lundi 6 août malgré un risque d'orage la  nuit à la belle étoile a bien eu lieu.
+              Nous étions 8 accordeur.e.s et petits enfants d'accordeure, prêt.e.s à tenter l'aventure. 
+              Nous sommes monté.e.s sur le plateau de Solaure en voiture...</p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- FIN ACTUS -->
+
+  
+
+    
+    <!-- AGENDA -->
+    <div id="agenda" class="row">
+
+      <div class="col-12">
+        <h1 class="text-center">Évènements à venir</h1>
+      </div>
+
+      <div class="col-md-4 col-lg-12 ml-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">10 juin 2020</div>
+          <img src="images/cartes-poker.jpg" class="img-fluid" alt="Dans l'agenda">
+          <div class="card-body">
+            <p class="h4">Atelier jeux : apprendre à mieu se connaître.</p>
+            <p class="card-text">Atelier jeu proposé par l'amical des jeux de St Benoît en Diois.</p>
+          </div>
+          <div class="card-footer"><i class="far fa-clock"></i>&nbsp;17h00 <br><i class="fas fa-map-marker-alt"></i>&nbsp;ESCDD - Die</div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-12 ml-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">26 juin 2020</div>
+          <img src="images/notes.jpg" class="img-fluid" alt="Dans l'agenda">
+          <div class="card-body">
+            <p class="h4">Atelier d'écriture : faire son autoportrait.</p>
+            <p class="card-text"> Marcel Proust avait pour habitude de faire compléter un questionnaire à ses amis, afin de mieux  connaître leur personnalité. Venez vous essayer à cet exercice.</p>
+          </div>
+          <div class="card-footer"><i class="far fa-clock"></i>&nbsp;18h00 <br><i class="fas fa-map-marker-alt"></i>&nbsp;café Andarta - Die</div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-12 ml-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">26 juin 2020</div>
+          <img src="images/chanteuse.jpg" class="img-fluid" alt="Dans l'agenda">
+          <div class="card-body">
+            <p class="h4">Apprendre à chanter</p>
+            <p class="card-text">Ici on n'apprend pas la musique, on la ressent et on vient comme on est ! C'est là où l'on apprend le plus, sur soi, les autres, le monde sonore qui nous entoure. On associe à la musique loisir, la musique bien-être…</p>
+          </div>
+          <div class="card-footer"><i class="far fa-clock"></i>&nbsp;14h00 <br><i class="fas fa-map-marker-alt"></i>&nbsp;chez Mimi - Châtillon-en-diois</div>
+        </div>
+      </div>
+
+
+    </div> <!-- FIN AGENDA -->
+
+  </div><!-- Fin container -->
+</main>
+
+  
+
+
+<!-- Begin Footer -->
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="/bootstrap-4/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
