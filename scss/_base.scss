@@ -16,19 +16,81 @@
 @mixin home-medium {
   @media screen and (min-width: 540px) { @content; }
 }
+@mixin home-xl {
+  @media screen and (min-width: 1200px) { @content; }
+}
 
 // Reboot again
 body {
   background-color: $light;
+  letter-spacing: .03em;
 }
 
 // NAV
+#primary-menu a {
+  font-weight: 700;
+  color: $gray-600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  @include home-xl {
+    font-size: 1em;
+  }
+}
+
+#primary-menu a:hover, #primary-menu a:hover {
+  color: $orange-acco;
+}
+
+#primary-menu .active {
+  color: $gray-900;
+}
+
+.shadow-dd-menu {
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  border: white;
+}
+
+.dropdown-item {
+  text-transform: none !important;
+  font-weight: 400 !important;
+  color: $gray-600 !important;
+  font-size: 1em !important;
+  &:hover {
+    background-color: white !important;
+    color: $orange-acco !important;
+    border: 0 !important;
+  }
+}
 
 
 // home-spash
 
 #carousel-home {
-  background-image: linear-gradient(#FE9300, $acco-red);
+  background-image: linear-gradient(#FE9300, $rouge-acco);
+  .carousel-caption {
+    bottom: 20%;
+    left: 5%;
+    right: 5%;
+    .blockquote {
+      width: 560px;
+      text-align: left;
+      font-size: 2em;
+      font-weight: 400;
+      font-style: italic;
+      cite {
+        color: white;
+        }
+    }
+    .blockquote-footer {
+      margin-top: 1em;
+      &::before {
+        color: white;
+      }
+    }
+    .carousel-logo img {
+      opacity: 100%;
+    }
+  }  
   .carousel-item {
     @include home-portrait {
       height: 100vh;
@@ -54,5 +116,22 @@ body {
       }
     }
   }
-
 }
+
+
+
+// Fonts
+.font-weight-black {
+  font-weight: 900 !important;
+}
+
+.pacifico {
+  font-family: $font-family-pacifico;
+  font-weight: 500;
+}
+
+// Colors
+.bg-beige {
+  background-color: $beige-acco;
+}
+

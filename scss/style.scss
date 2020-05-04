@@ -13,9 +13,10 @@
 //  Then override bootstrap default with project specific values.
 // --------------------------------------------------------
 
-@import "../bootstrap-4/scss/variables";
 
+@import "../bootstrap-4/scss/variables";
 @import "variables";
+
 
 // --------------------------------------------------------
 // Import required bootstrap sass files needed for this project.
