@@ -1,7 +1,8 @@
 // Color system
 $beige-acco: #FFE8C6;
 $rouge-acco: #990132;
-$orange-acco: #E9750A;
+$orange-acco: #fd6e21;
+$dark-acco: #5A031F;
 $dark: $gray-900;
 
 // ajouter + modifier des couleurs
@@ -13,7 +14,8 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
-  "dark": $dark
+  "dark": $dark,
+  "dark-acco": $dark-acco
 );
 
 
