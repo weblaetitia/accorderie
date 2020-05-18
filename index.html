@@ -21,15 +21,18 @@
               </li>
             </ul>
         </nav>
-
         </div>
       </div>
       <div class="container-fluid bg-white">
         <div class="container">
-          <nav id="primary-menu" class="navbar navbar-expand-lg px-0">
-            <a class="navbar-brand" href="#">
-              <img src="/images/accorderie-diois-logo.svg" width="180" alt="">
-            </a>
+          <nav id="primary-menu" class="navbar navbar-expand-lg px-0 navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <a class="navbar-brand" href="#">
+                <img src="/images/accorderie-diois-logo.svg" width="180" alt="">
+              </a>
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                   <a class="nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
@@ -66,15 +69,36 @@
                   <a class="nav-link" href="#">Contact</a>
                 </li>
               </ul>
+            </div>
+              
           </nav>
         </div>
       </div>
-
+      <!-- Accueil XS SM MD -->
+      <div id="homephotomobile" class="container-fluid d-lg-none px-5">
+        <div class="row align-content-center height-90">
+          <div class="col-12">
+            <img src="images/accorderie-diois-logo-white.svg" class="d-block mx-auto mb-5 home-logo">
+          </div>
+          <div class="col-6">
+            <a href="#actus" alt="Voir les actus">
+              <img src="images/picto-actu-white.svg" class="d-block mx-auto mb-3 home-picto">
+              <p class="text-center font-weight-bold text-uppercase text-white h6">Dernières<br>actualités</p>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#agenda">
+              <img src="images/picto-agenda-white.svg" class="d-block mx-auto mb-3 home-picto">
+              <p class="text-center font-weight-bold text-uppercase text-white h6">Évènements<br>à venir</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Accueil XS SM MD -->
     </header>
 
 <!-- Begin page content -->
 <main role="main">
-  
   <!-- Carousel -->
   <div class="container-fluid p-0 d-none d-lg-block">
     <div id="carousel-home" class="carousel slide carousel-fade mb-5" data-ride="carousel">
@@ -122,7 +146,7 @@
     <div class="container">
       <div class="row">
         <!-- Actus -->
-        <div class="col-12 col-lg-8">
+        <div id="actus" class="col-12 col-lg-8">
           <h2 class="pacifico h1 mt-4">Les dernières actus</h2>
           <div class="actus-posts row">
             <div class="col-12 col-md-6 p-0 p-sm-1 p-0 px-sm-3">
@@ -227,9 +251,8 @@
           </div>
         </div><!-- Fin Actus -->
         <!-- sidebar -->
-        <aside class="col-12 col-lg-4">
+        <aside id="agenda" class="col-12 col-lg-4">
           <!-- evenements -->
-          
             <h3 class="pacifico mt-4">Évènements à venir</h3>
             <div class="agenda-posts row">
               <div class="col-12 col-sm-6 col-md-4 col-lg-12">
