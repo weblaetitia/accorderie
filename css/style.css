@@ -8614,6 +8614,9 @@ body {
   letter-spacing: 0.03em;
 }
 
+#primary-menu .active a {
+  color: #212529;
+}
 #primary-menu a {
   font-weight: 700;
   color: #6c757d;
@@ -8625,16 +8628,11 @@ body {
     font-size: 1em;
   }
 }
-
-#primary-menu a:hover, #primary-menu a:hover {
+#primary-menu a:hover, #primary-menu a:focus {
   color: #fd6e21;
 }
 
-#primary-menu .active {
-  color: #212529;
-}
-
-.shadow-dd-menu {
+.dropdown-menu-shadow {
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
   border: white;
 }
@@ -8649,6 +8647,52 @@ body {
   background-color: white !important;
   color: #fd6e21 !important;
   border: 0 !important;
+}
+
+.navbar-light .navbar-toggler {
+  background: currentColor;
+}
+
+.navbar-toggler-transformicon {
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  width: 1em;
+  height: 0.1em;
+  background: currentColor;
+  transition: 0.3s;
+  position: relative;
+  top: -0.35em;
+}
+.navbar-toggler-transformicon:before, .navbar-toggler-transformicon:after {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  background: currentColor;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  content: "";
+  transform-origin: 0.2rem center;
+}
+.navbar-toggler-transformicon:before {
+  top: 0.45rem;
+}
+.navbar-toggler-transformicon:after {
+  top: -0.45rem;
+}
+[aria-expanded=true] .navbar-toggler-transformicon {
+  background: transparent;
+}
+[aria-expanded=true] .navbar-toggler-transformicon:before, [aria-expanded=true] .navbar-toggler-transformicon:after {
+  transform-origin: 50% 50%;
+  top: 0;
+}
+[aria-expanded=true] .navbar-toggler-transformicon:before {
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+[aria-expanded=true] .navbar-toggler-transformicon:after {
+  transform: rotate3d(0, 0, 1, -45deg);
 }
 
 #carousel-home {
