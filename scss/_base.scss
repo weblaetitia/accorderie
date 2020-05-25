@@ -2,7 +2,7 @@
 // to learn more about SASS, visit sass-lang.com
 
 @mixin home-xsmall-small-medium {
-  @media screen and (max-width: 767px) { @content; }
+  @media screen and (max-width: 991px) { @content; }
 }
 @mixin home-portrait {
   @media screen and (max-width: 767px) and (orientation: portrait) { @content; }
@@ -35,7 +35,7 @@ body {
   letter-spacing: .03em;
 }
 
-// NAV
+// Fonst and color : NAV
 #primary-menu {
   .active a {
     color: $gray-900;
@@ -71,10 +71,84 @@ body {
   }
 }
 
+// Menus
+#menus {
+  @include home-xsmall-small-medium {
+    background-image: linear-gradient($orange-acco, $rouge-acco);
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    #secondary-menu {
+      height: 30vh;
+      div {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center !important;
+        a:first-child {
+          margin-bottom: 1em;
+        }
+      }
+    }
+    #primary-menu {
+      height: 70vh;
+      a img {
+        display: none;
+      }
+      .container, .container, nav, ul {
+        height: 100%;
+      }
+      .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        .nav-item {
+          text-align: center;
+          .nav-link {
+            color: white;
+            font-size: 1em;
+          }
+          .nav-link:hover {
+            letter-spacing: 0.05em;
+            // doesn't work :(
+          }
+          .dropdown-menu {
+            background-color: inherit;
+            box-shadow: none;
+            position: static;
+            margin: 0 auto 1em;
+            padding: 0;
+            .dropdown-item {
+              color: white !important;
+              text-align: center;
+            }
+            .dropdown-item:hover {
+              background-color: transparent !important;
+              letter-spacing: 0.05em;
+            }
+            .dropdown-divider {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+// Burger icon 
+.navbar-toggler {
+  position: absolute;
+  z-index: 10;
+  right: 0px;
+  padding: 1.5em;
+}
+
 // Animate burger icon
 // Code adapted from https://www.sarasoueidan.com/demos/navicon-transformicons/
 .navbar-light .navbar-toggler {
-  background: currentColor;
+  background: white;
 }
 .navbar-toggler-transformicon {
   text-align: center;
@@ -82,17 +156,17 @@ body {
   display: inline-block;
   width: 1em;
   height: .1em;
-  background: currentColor;
+  background: white;
   transition: 0.3s;
   position: relative;
-  top: -.35em;
+  top: 0em;
   
   &:before,
   &:after {
     display: inline-block;
     width: inherit;
     height: inherit;
-    background: currentColor;
+    background: white;
     transition: 0.3s;
     position: absolute;
     left: 0;

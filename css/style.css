@@ -8649,8 +8649,78 @@ body {
   border: 0 !important;
 }
 
+@media screen and (max-width: 991px) {
+  #menus {
+    background-image: linear-gradient(#fd6e21, #990132);
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #menus #secondary-menu {
+    height: 30vh;
+  }
+  #menus #secondary-menu div {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  #menus #secondary-menu div a:first-child {
+    margin-bottom: 1em;
+  }
+  #menus #primary-menu {
+    height: 70vh;
+  }
+  #menus #primary-menu a img {
+    display: none;
+  }
+  #menus #primary-menu .container, #menus #primary-menu .container, #menus #primary-menu nav, #menus #primary-menu ul {
+    height: 100%;
+  }
+  #menus #primary-menu .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  #menus #primary-menu .navbar-nav .nav-item {
+    text-align: center;
+  }
+  #menus #primary-menu .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 1em;
+  }
+  #menus #primary-menu .navbar-nav .nav-item .nav-link:hover {
+    letter-spacing: 0.05em;
+  }
+  #menus #primary-menu .navbar-nav .nav-item .dropdown-menu {
+    background-color: inherit;
+    box-shadow: none;
+    position: static;
+    margin: 0 auto 1em;
+    padding: 0;
+  }
+  #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: white !important;
+    text-align: center;
+  }
+  #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: transparent !important;
+    letter-spacing: 0.05em;
+  }
+  #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-divider {
+    display: none;
+  }
+}
+
+.navbar-toggler {
+  position: absolute;
+  z-index: 10;
+  right: 0px;
+  padding: 1.5em;
+}
+
 .navbar-light .navbar-toggler {
-  background: currentColor;
+  background: white;
 }
 
 .navbar-toggler-transformicon {
@@ -8659,16 +8729,16 @@ body {
   display: inline-block;
   width: 1em;
   height: 0.1em;
-  background: currentColor;
+  background: white;
   transition: 0.3s;
   position: relative;
-  top: -0.35em;
+  top: 0em;
 }
 .navbar-toggler-transformicon:before, .navbar-toggler-transformicon:after {
   display: inline-block;
   width: inherit;
   height: inherit;
-  background: currentColor;
+  background: white;
   transition: 0.3s;
   position: absolute;
   left: 0;
@@ -8834,7 +8904,7 @@ body {
   background-image: url(../images/stroke-1-4-white.svg);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   #actus {
     background-color: #fff;
   }
