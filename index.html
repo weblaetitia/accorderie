@@ -8,76 +8,78 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
   </head>
   <body>
-    <header class="bg-white">
+    <header class="bg-white navbar-expand-lg">
+      <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menus" aria-controls="menus" aria-expanded="false" aria-label="Afficher/masquer la navigation">
+          <span class="navbar-toggler-transformicon"></span>
+        </button>
+        <!-- End Toggler -->
        <!-- 2 Menus -->
-       <!-- Toggler -->
-       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#menus" aria-controls="menus" aria-expanded="false" aria-label="Afficher/masquer la navigation">
-        <span class="navbar-toggler-transformicon"></span>
-      </button>
-       <!-- End Toggler -->
-      <div id="menus">
-        <!-- Secondary Menu -->
-        <div id="secondary-menu" class="bg-primary">
-          <div class="container p-2 pr-md-2 d-flex justify-content-end">
-            <a class="btn btn-outline-light mx-2" href="#">
-              <i class="fas fa-users"></i>
-              Devenir Accordeur
-            </a>
-            <a class="btn btn-info mx-2" href="#">
-              <i class="fas fa-sign-in-alt"></i>
-              Espace membre
-            </a>
+      <div id="menus" class="collapse fade navbar-collapse">
+        <div class="menus-container">
+          <!-- Secondary Menu -->
+          <div id="secondary-menu" class="bg-primary">
+            <div class="container p-2 pr-md-2 d-flex justify-content-end">
+              <a class="btn btn-outline-light mx-2" href="#">
+                <i class="fas fa-users"></i>
+                Devenir Accordeur
+              </a>
+              <a class="btn btn-info mx-2" href="#">
+                <i class="fas fa-sign-in-alt"></i>
+                Espace membre
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- End Secondary Menu -->
-        <!-- Primary Menu -->
-        <div id="primary-menu">
-          <div class="container">
-            <nav class="navbar navbar-expand px-0 navbar-white">
-                <a class="navbar-brand" href="#">
-                  <img src="/images/accorderie-diois-logo.svg" width="180" alt="L'Accorderie de Die et du Diois">
-                </a>
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Accueil <span class="sr-only">(Page en cours)</span></a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      L'Accorderie du Diois
-                    </a>
-                    <div class="dropdown-menu border-0 rounded-0 dropdown-menu-shadow" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Présentation</a>
-                      <a class="dropdown-item" href="#">Gouvernance</a>
-                      <a class="dropdown-item" href="#">On parle de nous</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><i class="fas fa-toolbox"></i> Boîte à outils</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Nos actualités</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Agenda</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      À propos
-                    </a>
-                    <div class="dropdown-menu border-0 rounded-0 dropdown-menu-shadow" aria-labelledby="navbarDropdown2">
-                      <a class="dropdown-item" href="#">Qu'est-ce qu'une Accorderie&nbsp;?</a>
-                      <a class="dropdown-item" href="#">Les service</a>
-                      <a class="dropdown-item" href="#">Carte du réseau</a>
-                      <a class="dropdown-item" href="#">La charte</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-            </nav>
+          <!-- End Secondary Menu -->
+          <!-- Primary Menu -->
+          <div id="primary-menu">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg px-lg-0 navbar-white">
+                  <a class="navbar-brand" href="#">
+                    <img src="images/accorderie-diois-logo.svg" width="180" alt="L'Accorderie de Die et du Diois">
+                  </a>
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Accueil <span class="sr-only">(Page en cours)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        L'Accorderie du Diois
+                      </a>
+                      <div class="dropdown-menu border-0 rounded-0 dropdown-menu-shadow" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Présentation</a>
+                        <a class="dropdown-item" href="#">Gouvernance</a>
+                        <a class="dropdown-item" href="#">On parle de nous</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fas fa-toolbox"></i> Boîte à outils</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Nos actualités</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Agenda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        À propos
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right border-0 rounded-0 dropdown-menu-shadow" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">Qu'est-ce qu'une Accorderie&nbsp;?</a>
+                        <a class="dropdown-item" href="#">Les service</a>
+                        <a class="dropdown-item" href="#">Carte du réseau</a>
+                        <a class="dropdown-item" href="#">La charte</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+              </nav>
+            </div>
           </div>
+          <!-- End Primary Menu -->
         </div>
-        <!-- End Primary Menu -->
       </div>
        <!-- End 2 Menus -->
 
@@ -87,16 +89,16 @@
           <div class="col-12">
             <img src="images/accorderie-diois-logo-white.svg" class="d-block mx-auto mb-5 home-logo">
           </div>
-          <div class="col-6">
+          <div class="col-sm-6">
             <a href="#actus" alt="Voir les actus">
               <img src="images/picto-actu-white.svg" class="d-block mx-auto mb-3 home-picto">
-              <p class="text-center font-weight-bold text-uppercase text-white h6">Dernières<br>actualités</p>
+              <span class="d-block text-center font-weight-bold text-uppercase text-white h6">Dernières<br>actualités</span>
             </a>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6 mt-4 mt-sm-0">
             <a href="#agenda">
               <img src="images/picto-agenda-white.svg" class="d-block mx-auto mb-3 home-picto">
-              <p class="text-center font-weight-bold text-uppercase text-white h6">Évènements<br>à venir</p>
+              <span class="d-block text-center font-weight-bold text-uppercase text-white h6">Évènements<br>à venir</span>
             </a>
           </div>
         </div>

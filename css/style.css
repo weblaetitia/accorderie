@@ -6809,61 +6809,75 @@ body {
     color: #fd6e21 !important;
     border: 0 !important; }
 
+@media screen and (min-width: 991px) {
+  #menus {
+    display: block !important;
+    opacity: 1 !important; } }
 @media screen and (max-width: 991px) {
   #menus {
     background-image: linear-gradient(#fd6e21, #990132);
     height: 100vh;
-    display: flex;
-    flex-direction: column-reverse; }
-    #menus #secondary-menu {
-      height: 30vh; }
-      #menus #secondary-menu div {
-        height: 100%;
-        flex-direction: column;
-        justify-content: center !important; }
-        #menus #secondary-menu div a:first-child {
-          margin-bottom: 1em; }
-    #menus #primary-menu {
-      height: 70vh; }
-      #menus #primary-menu a img {
-        display: none; }
-      #menus #primary-menu .container, #menus #primary-menu .container, #menus #primary-menu nav, #menus #primary-menu ul {
-        height: 100%; }
-      #menus #primary-menu .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto; }
-        #menus #primary-menu .navbar-nav .nav-item {
-          text-align: center; }
-          #menus #primary-menu .navbar-nav .nav-item .nav-link {
-            color: white;
-            font-size: 1em; }
-          #menus #primary-menu .navbar-nav .nav-item .nav-link:hover {
+    width: 100%;
+    position: absolute;
+    z-index: 1; }
+    #menus .menus-container {
+      display: flex; }
+    #menus #secondary-menu .container {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center !important; }
+      #menus #secondary-menu .container a:first-child {
+        margin-bottom: 1em; }
+    #menus #primary-menu a img {
+      display: none; }
+    #menus #primary-menu .navbar {
+      display: block; }
+    #menus #primary-menu .container, #menus #primary-menu .container, #menus #primary-menu nav, #menus #primary-menu ul {
+      height: 100%; }
+    #menus #primary-menu .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto; }
+      #menus #primary-menu .navbar-nav .nav-item {
+        text-align: center; }
+        #menus #primary-menu .navbar-nav .nav-item .nav-link {
+          color: white;
+          font-size: 1em; }
+        #menus #primary-menu .navbar-nav .nav-item .nav-link:hover {
+          letter-spacing: 0.05em; }
+        #menus #primary-menu .navbar-nav .nav-item .dropdown-menu {
+          background-color: inherit;
+          box-shadow: none;
+          position: static;
+          margin: 0 auto 1em;
+          padding: 0; }
+          #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+            color: white !important;
+            text-align: center; }
+          #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+            background-color: transparent !important;
             letter-spacing: 0.05em; }
-          #menus #primary-menu .navbar-nav .nav-item .dropdown-menu {
-            background-color: inherit;
-            box-shadow: none;
-            position: static;
-            margin: 0 auto 1em;
-            padding: 0; }
-            #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-              color: white !important;
-              text-align: center; }
-            #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-              background-color: transparent !important;
-              letter-spacing: 0.05em; }
-            #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-divider {
-              display: none; } }
+          #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-divider {
+            display: none; } }
+@media screen and (max-width: 991px) and (orientation: portrait) {
+  #menus .menus-container {
+    flex-direction: column-reverse; }
+  #menus #secondary-menu {
+    height: 30vh; }
+    #menus #secondary-menu .container {
+      height: 100%; }
+  #menus #primary-menu {
+    height: 70vh; } }
 @media screen and (max-width: 991px) and (orientation: landscape) {
-  #menus {
+  #menus .menus-container {
     flex-direction: row-reverse; }
-    #menus #secondary-menu {
-      height: 100vh;
-      width: 40%; }
-    #menus #primary-menu {
-      height: 100vh;
-      width: 60%; } }
+  #menus #secondary-menu {
+    height: 100vh;
+    width: 40%; }
+  #menus #primary-menu {
+    height: 100vh;
+    width: 60%; } }
 
 .navbar-toggler {
   position: absolute;
@@ -6946,32 +6960,31 @@ body {
   height: 100vh;
   background: linear-gradient(rgba(255, 0, 0, 0.75), rgba(255, 145, 0, 0.75)), url(../images/carousel-1600-01.jpg) no-repeat center;
   background-size: cover; }
+  #homephotomobile .home-logo {
+    height: auto;
+    max-width: 100%;
+    margin-top: 40px; }
+    @media (max-width: 767.98px) {
+      #homephotomobile .home-logo {
+        width: 280px; } }
+    @media (min-width: 576px) {
+      #homephotomobile .home-logo {
+        width: 410px; } }
   @media (max-width: 767.98px) {
-    #homephotomobile .home-logo {
-      width: 280px;
+    #homephotomobile .home-picto {
+      width: 60px;
       height: auto; } }
   @media (min-width: 576px) {
-    #homephotomobile .home-logo {
-      width: 410px;
+    #homephotomobile .home-picto {
+      width: 80px;
       height: auto; } }
-  #homephotomobile .home-picto {
-    transition: transform 1s; }
-    @media (max-width: 767.98px) {
-      #homephotomobile .home-picto {
-        width: 60px;
-        height: auto; } }
-    @media (min-width: 576px) {
-      #homephotomobile .home-picto {
-        width: 80px;
-        height: auto; } }
-    #homephotomobile .home-picto:hover {
-      transform: scale(1.1); }
   #homephotomobile a {
-    transition-property: letter-spacing;
-    transition-duration: 1s; }
-  #homephotomobile a:hover {
-    text-decoration: none;
-    letter-spacing: 0.06em; }
+    transition: .5s;
+    display: block; }
+    #homephotomobile a:hover, #homephotomobile a:focus {
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      transform: scale(1.1); }
 
 .font-weight-black {
   font-weight: 900 !important; }

@@ -1,13 +1,13 @@
 // add your custom styles here
 // to learn more about SASS, visit sass-lang.com
 
-@mixin home-xsmall-small-medium {
+@mixin xsmall-small-medium {
   @media screen and (max-width: 991px) { @content; }
 }
-@mixin home-portrait {
+@mixin mobile-portrait {
   @media screen and (max-width: 991px) and (orientation: portrait) { @content; }
 }
-@mixin home-landscape {
+@mixin mobile-landscape {
   @media screen and (max-width: 991px) and (orientation: landscape) { @content; }
 }
 @mixin home-large {
@@ -77,14 +77,22 @@ body {
 
 // Menus
 #menus {
-  @include home-xsmall-small-medium {
+
+  @include home-large {
+    display: block !important;
+    opacity: 1 !important;
+  }
+  @include xsmall-small-medium {
     background-image: linear-gradient($orange-acco, $rouge-acco);
     height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    .menus-container {
+      display: flex;
+    }
     #secondary-menu {
-      height: 30vh;
-      div {
+      .container {
         height: 100%;
         flex-direction: column;
         justify-content: center !important;
@@ -94,9 +102,11 @@ body {
       }
     }
     #primary-menu {
-      height: 70vh;
       a img {
         display: none;
+      }
+      .navbar {
+        display: block;
       }
       .container, .container, nav, ul {
         height: 100%;
@@ -138,9 +148,26 @@ body {
       }
     }
   }
-  
-  @include home-landscape {
-    flex-direction: row-reverse;
+  @include mobile-portrait {
+    .menus-container {
+      flex-direction: column-reverse;
+    }
+    #secondary-menu {
+      height: 30vh;
+      .container {
+        height: 100%;
+      }
+    }
+    #primary-menu {
+      height: 70vh;
+    }
+
+  }
+  @include mobile-landscape {
+    .menus-container {
+      flex-direction: row-reverse;
+    }
+
     #secondary-menu {
       height: 100vh;
       width: 40%;
@@ -150,9 +177,10 @@ body {
       width: 60%;
     }
   }
-} // end of #menus
+}
+// end of #menus
 
-// Burger icon 
+// Burger icon
 .navbar-toggler {
   position: absolute;
   z-index: 10;
@@ -175,7 +203,7 @@ body {
   transition: 0.3s;
   position: relative;
   top: 0em;
-  
+
   &:before,
   &:after {
     display: inline-block;
@@ -194,7 +222,7 @@ body {
   &:after {
     top: -.45rem;
   }
-  
+
   [aria-expanded='true'] & {
     background: transparent;
 
@@ -273,13 +301,14 @@ body {
   background-size: cover;
 
   .home-logo {
+    height: auto;
+    max-width: 100%;
+    margin-top: 40px;
     @include media-breakpoint-down(sm) {
       width: 280px;
-      height: auto;
     }
     @include media-breakpoint-up(sm) {
       width: 410px;
-      height: auto;
     }
   }
   .home-picto {
@@ -290,18 +319,17 @@ body {
     @include media-breakpoint-up(sm) {
       width: 80px;
       height: auto;
-    } &:hover {
+    }
+  }
+  a {
+    transition: .5s;
+    display: block;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      letter-spacing: 0.06em;
       transform: scale(1.1);
     }
-    transition: transform 1s;
-  } 
-  a {
-    transition-property: letter-spacing;
-    transition-duration: 1s;
-  }
-  a:hover {
-    text-decoration: none;
-    letter-spacing: 0.06em;
   }
 }
 
@@ -352,7 +380,7 @@ body {
 
 // BG de la div Actus
 #actus {
-  @include home-xsmall-small-medium {
+  @include xsmall-small-medium {
     background-color: #fff;
   }
 }
