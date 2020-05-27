@@ -209,11 +209,13 @@ body {
 }
 
 
-// home-spash
+// Carousel
 #carousel-home {
   background-image: linear-gradient(#fb2600, #FE9300);
   .carousel-caption {
-    bottom: 20%;
+    position: absolute;
+    top: 0px;
+    height: 100%;
     left: 5%;
     right: 5%;
     .blockquote {
@@ -261,7 +263,7 @@ body {
       }
     }
   }
-}
+} // end #carousel-home
 
 // homePhotoMobile
 #homephotomobile {
