@@ -37,6 +37,10 @@ body {
 
 // Fonst and color : NAV
 #primary-menu {
+  .navbar-brand {
+    overflow: auto;
+    width: 180px;
+  }
   .active a {
     color: $gray-900;
   }

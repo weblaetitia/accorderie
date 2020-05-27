@@ -6779,6 +6779,9 @@ body {
   background-color: #f8f9fa;
   letter-spacing: .03em; }
 
+#primary-menu .navbar-brand {
+  overflow: auto;
+  width: 180px; }
 #primary-menu .active a {
   color: #212529; }
 #primary-menu a {
