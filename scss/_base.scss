@@ -333,6 +333,32 @@ body {
   }
 }
 
+// Agenda posts cards
+.agenda-posts {
+  a {
+    transition: .5s;
+  }
+  a:hover, a:focus {
+    letter-spacing: 0.04em;
+  }
+}
+
+// Actus-posts cards
+
+.actus-posts  {
+  a {
+    i {
+      font-size: .8em;
+      text-indent : .5em;
+      &:hover {
+        text-indent : 1em;
+      }
+    i:hover {
+      text-indent : 1em;
+    }
+  }
+  }
+}
 
 
 // Fonts
