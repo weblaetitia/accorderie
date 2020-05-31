@@ -82,12 +82,18 @@ body {
     display: block !important;
     opacity: 1 !important;
     
-    .dropdown .dropdown-menu {
-      margin-top: -1px;
-      padding-top: .25rem;
-    }
-    .dropdown:hover .dropdown-menu {
-      display: block;
+    .dropdown {
+      .dropdown-menu {
+        display: block;
+        transition: all 0.3s ease-out;
+        opacity: 0;
+      }
+      &:hover,
+      &:focus-within {
+        .dropdown-menu {
+          opacity: 1;
+        }
+      }
     }
   }
   @include xsmall-small-medium {
@@ -135,10 +141,19 @@ body {
             }
           }
           .dropdown-menu {
+            // Animate opening/closing
+            display: block;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .5s;
+            &.show {
+              max-height: 200px;
+            }
+            // Override Bootstrap styles on mobile
             background-color: inherit;
             box-shadow: none;
             position: static;
-            margin: 0 auto 1em;
+            margin: 0 auto;
             padding: 0;
             .dropdown-item {
               color: white !important;
