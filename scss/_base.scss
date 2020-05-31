@@ -49,7 +49,7 @@ body {
   .active a {
     color: $gray-900;
   }
-  a {
+  .nav-link {
     font-weight: 700;
     color: $gray-600;
     text-transform: uppercase;
@@ -62,22 +62,14 @@ body {
       color: $orange-acco;
     }
   }
+  .dropdown-item:hover {
+    background: none;
+    color: $orange-acco;
+  }
 }
 .dropdown-menu-shadow {
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
   border: white;
-}
-
-.dropdown-item {
-  text-transform: none !important;
-  font-weight: 400 !important;
-  color: $gray-600 !important;
-  font-size: 1em !important;
-  &:hover {
-    background-color: white !important;
-    color: $orange-acco !important;
-    border: 0 !important;
-  }
 }
 
 // Menus
@@ -158,15 +150,13 @@ body {
               max-height: 200px;
             }
             // Override Bootstrap styles on mobile
-            background-color: inherit;
             box-shadow: none;
             position: static;
             margin: 0 auto;
             padding: 0;
             .dropdown-item {
-              color: white !important;
+              color: white;
               text-align: center;
-              background-color: transparent !important;
               transition: .1s transform ease-in;
               &:hover {
                 transform: scaleX(1.1);
