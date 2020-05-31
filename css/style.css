@@ -6820,9 +6820,12 @@ body {
     #menus .dropdown .dropdown-menu {
       display: block;
       transition: all 0.3s ease-out;
-      opacity: 0; }
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden; }
     #menus .dropdown:hover .dropdown-menu, #menus .dropdown:focus-within .dropdown-menu {
-      opacity: 1; } }
+      opacity: 1;
+      max-height: 250px; } }
 @media screen and (max-width: 991px) {
   #menus {
     background-image: linear-gradient(#fd6e21, #990132);
