@@ -6775,6 +6775,16 @@ a.text-dark-acco:hover, a.text-dark-acco:focus {
 .width-80 {
   width: 80%; }
 
+.font-weight-black {
+  font-weight: 900 !important; }
+
+.pacifico {
+  font-family: Pacifico, "Lato", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500; }
+
+.bg-beige {
+  background-color: #FFE8C6; }
+
 body {
   background-color: #f8f9fa;
   letter-spacing: .03em; }
@@ -7025,16 +7035,6 @@ body {
 .actus-posts a:hover i {
   padding-left: .5em;
   padding-right: 0; }
-
-.font-weight-black {
-  font-weight: 900 !important; }
-
-.pacifico {
-  font-family: Pacifico, "Lato", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 500; }
-
-.bg-beige {
-  background-color: #FFE8C6; }
 
 .prev-next {
   padding-bottom: 1em; }

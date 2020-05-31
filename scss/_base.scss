@@ -29,6 +29,17 @@
 .width-80 {
   width: 80%;
 }
+.font-weight-black {
+  font-weight: 900 !important;
+}
+.pacifico {
+  font-family: $font-family-pacifico;
+  font-weight: 500;
+}
+.bg-beige {
+  background-color: $beige-acco;
+}
+
 // Reboot again
 body {
   background-color: $light;
@@ -400,22 +411,6 @@ body {
       padding-right: 0;
     }
   }
-}
-
-
-// Fonts
-.font-weight-black {
-  font-weight: 900 !important;
-}
-
-.pacifico {
-  font-family: $font-family-pacifico;
-  font-weight: 500;
-}
-
-// Colors
-.bg-beige {
-  background-color: $beige-acco;
 }
 
 .prev-next {
