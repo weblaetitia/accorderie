@@ -7019,8 +7019,8 @@ body {
     margin-right: 5px; } }
 .agenda-posts a {
   transition: .5s; }
-.agenda-posts a:hover, .agenda-posts a:focus {
-  letter-spacing: 0.04em; }
+  .agenda-posts a:hover, .agenda-posts a:focus {
+    transform: scale(1.1); }
 
 .actus-posts a i {
   transition: .1s padding ease-in;
