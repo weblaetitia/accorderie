@@ -81,6 +81,14 @@ body {
   @include home-large {
     display: block !important;
     opacity: 1 !important;
+    
+    .dropdown .dropdown-menu {
+      margin-top: -1px;
+      padding-top: .25rem;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
   }
   @include xsmall-small-medium {
     background-image: linear-gradient($orange-acco, $rouge-acco);
