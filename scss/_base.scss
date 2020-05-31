@@ -343,6 +343,22 @@ body {
 
 // Agenda posts cards
 .agenda-posts {
+  .card {
+    @include media-breakpoint-up(lg) {
+      min-width: 80%;
+    }
+    @include media-breakpoint-down(sm) {
+      min-width: 80%;
+    }
+  }
+  @include media-breakpoint-only(md) {
+    .card:not(:first-child) {
+      margin-left: 5px;
+    }
+    .card:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
   a {
     transition: .5s;
   }

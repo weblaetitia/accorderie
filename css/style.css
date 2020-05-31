@@ -6992,6 +6992,17 @@ body {
       text-decoration: none;
       transform: scaleX(1.1); }
 
+@media (min-width: 992px) {
+  .agenda-posts .card {
+    min-width: 80%; } }
+@media (max-width: 767.98px) {
+  .agenda-posts .card {
+    min-width: 80%; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .agenda-posts .card:not(:first-child) {
+    margin-left: 5px; }
+  .agenda-posts .card:not(:last-child) {
+    margin-right: 5px; } }
 .agenda-posts a {
   transition: .5s; }
 .agenda-posts a:hover, .agenda-posts a:focus {
