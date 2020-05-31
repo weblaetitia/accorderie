@@ -129,10 +129,10 @@ body {
           .nav-link {
             color: white;
             font-size: 1em;
-          }
-          .nav-link:hover {
-            letter-spacing: 0.05em;
-            // doesn't work :(
+            transition: .1s transform ease-in;
+            &:hover {
+              transform: scaleX(1.1);
+            }
           }
           .dropdown-menu {
             background-color: inherit;
@@ -143,10 +143,11 @@ body {
             .dropdown-item {
               color: white !important;
               text-align: center;
-            }
-            .dropdown-item:hover {
               background-color: transparent !important;
-              letter-spacing: 0.05em;
+              transition: .1s transform ease-in;
+              &:hover {
+                transform: scaleX(1.1);
+              }
             }
             .dropdown-divider {
               display: none;
@@ -335,8 +336,7 @@ body {
     &:hover,
     &:focus {
       text-decoration: none;
-      letter-spacing: 0.06em;
-      transform: scale(1.1);
+      transform: scaleX(1.1);
     }
   }
 }
@@ -356,15 +356,15 @@ body {
 .actus-posts  {
   a {
     i {
-      font-size: .8em;
-      text-indent : .5em;
-      &:hover {
-        text-indent : 1em;
-      }
-    i:hover {
-      text-indent : 1em;
+      transition: .1s padding ease-in;
+      text-indent: .5em;
+      padding-left: 0;
+      padding-right: .5em;
     }
-  }
+    &:hover i {
+      padding-left: .5em;
+      padding-right: 0;
+    }
   }
 }
 
