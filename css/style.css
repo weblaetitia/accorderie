@@ -6841,10 +6841,10 @@ body {
       justify-content: center !important; }
       #menus #secondary-menu .container a:first-child {
         margin-bottom: 1em; }
-    #menus #primary-menu a img {
-      display: none; }
     #menus #primary-menu .navbar {
       display: block; }
+    #menus #primary-menu .navbar-brand {
+      display: none; }
     #menus #primary-menu .container, #menus #primary-menu .container, #menus #primary-menu nav, #menus #primary-menu ul {
       height: 100%; }
     #menus #primary-menu .navbar-nav {

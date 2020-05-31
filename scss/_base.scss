@@ -124,11 +124,11 @@ body {
       }
     }
     #primary-menu {
-      a img {
-        display: none;
-      }
       .navbar {
         display: block;
+      }
+      .navbar-brand {
+        display: none;
       }
       .container, .container, nav, ul {
         height: 100%;
