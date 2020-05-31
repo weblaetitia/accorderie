@@ -6779,6 +6779,10 @@ body {
   background-color: #f8f9fa;
   letter-spacing: .03em; }
 
+.btn-outline-light:focus {
+  color: black;
+  background: white; }
+
 #primary-menu .navbar-brand {
   overflow: auto;
   width: 180px; }

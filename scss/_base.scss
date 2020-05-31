@@ -35,6 +35,11 @@ body {
   letter-spacing: .03em;
 }
 
+.btn-outline-light:focus {
+  color: black;
+  background: white;
+}
+
 // Fonts and color : NAV
 #primary-menu {
   .navbar-brand {
