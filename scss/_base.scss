@@ -382,7 +382,11 @@ body {
 }
 
 // Actus-posts cards
-
+#actus {
+  @include xsmall-small-medium {
+    background-color: #fff;
+  }
+}
 .actus-posts  {
   a {
     i {
@@ -445,13 +449,6 @@ body {
       text-decoration: none;
       color: $gray-700;
     }
-  }
-}
-
-// BG de la div Actus
-#actus {
-  @include xsmall-small-medium {
-    background-color: #fff;
   }
 }
 
