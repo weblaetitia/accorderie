@@ -85,7 +85,6 @@ body {
 
 // Menus
 #menus {
-
   @include home-large {
     display: block !important;
     opacity: 1 !important;
@@ -161,6 +160,7 @@ body {
               max-height: 200px;
             }
             // Override Bootstrap styles on mobile
+            background-color: transparent;
             box-shadow: none;
             position: static;
             margin: 0 auto;
