@@ -384,10 +384,12 @@ body {
     }
   }
   a {
-    transition: .5s;
+    transition: .3s;
+    display: inline-block; // Otherwise to apply transform on hover
+    transform-origin: left;
     &:hover,
     &:focus {
-      transform: scale(1.1);
+      transform: scale(1.02);
     }
   }
 }
