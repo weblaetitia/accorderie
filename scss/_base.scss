@@ -219,6 +219,10 @@ body {
   z-index: 10;
   right: 0px;
   padding: 1.5em;
+  border-radius: 0;
+  &:focus {
+    outline: 0;
+  }
 }
 
 // Animate burger icon

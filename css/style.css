@@ -8784,6 +8784,10 @@ body {
   z-index: 10;
   right: 0px;
   padding: 1.5em;
+  border-radius: 0;
+}
+.navbar-toggler:focus {
+  outline: 0;
 }
 
 .navbar-light .navbar-toggler {
