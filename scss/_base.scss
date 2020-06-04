@@ -164,6 +164,9 @@ body {
             box-shadow: none;
             position: static;
             margin: 0 auto;
+            &.show {
+              margin-bottom: 1rem;
+            }
             padding: 0;
             .dropdown-item {
               color: white;

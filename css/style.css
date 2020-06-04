@@ -8739,6 +8739,9 @@ body {
   #menus #primary-menu .navbar-nav .nav-item .dropdown-menu.show {
     max-height: 200px;
   }
+  #menus #primary-menu .navbar-nav .nav-item .dropdown-menu.show {
+    margin-bottom: 1rem;
+  }
   #menus #primary-menu .navbar-nav .nav-item .dropdown-menu .dropdown-item {
     color: white;
     text-align: center;
