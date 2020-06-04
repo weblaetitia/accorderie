@@ -8993,4 +8993,17 @@ body {
   color: #495057;
 }
 
+form .form-control {
+  border-radius: 0;
+  border-color: #6c757d;
+}
+form .form-control:focus {
+  border-color: #ced4da;
+  outline: 0;
+  box-shadow: none;
+}
+form .form-control:focus::placeholder {
+  color: #ced4da;
+}
+
 /*# sourceMappingURL=style.css.map */

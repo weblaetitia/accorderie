@@ -451,3 +451,17 @@ body {
 }
 
 // FORMS
+form {
+  .form-control {
+    border-radius: 0;
+    border-color: $gray-600;
+    &:focus {
+      border-color: $gray-400;
+      outline: 0;
+      box-shadow: none;
+      &::placeholder {
+        color:$gray-400;
+      }
+    }
+  }
+}
