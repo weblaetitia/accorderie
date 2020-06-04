@@ -384,12 +384,10 @@ body {
     }
   }
   a {
-    transition: .3s;
-    display: inline-block; // Otherwise to apply transform on hover
-    transform-origin: left;
+    transition: .1s color ease-in;
     &:hover,
     &:focus {
-      transform: scale(1.02);
+      color: $rouge-acco !important;
     }
   }
 }
