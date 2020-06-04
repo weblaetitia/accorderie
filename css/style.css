@@ -8980,9 +8980,6 @@ body {
   overflow: hidden;
   background-image: url("../images/stroke-1-4.svg");
 }
-.prev-next.white-divider:before {
-  background-image: url("../images/stroke-1-4-white.svg");
-}
 .prev-next .nav-link {
   text-transform: uppercase;
   font-weight: 700;
@@ -9011,6 +9008,16 @@ form .form-control:focus {
 }
 form .form-control:focus::placeholder {
   color: #ced4da;
+}
+
+.white-divider:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 0.5em 0;
+  overflow: hidden;
+  background-image: url("../images/stroke-1-4-white.svg");
 }
 
 /*# sourceMappingURL=style.css.map */
