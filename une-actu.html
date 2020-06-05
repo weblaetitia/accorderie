@@ -11,7 +11,7 @@
     <header class="bg-white navbar-expand-lg">
       <!-- Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menus" aria-controls="menus" aria-expanded="false" aria-label="Afficher/masquer la navigation">
-          <span class="navbar-toggler-transformicon"></span>
+          <span class="navbar-toggler-transformicon burger-dark"></span>
         </button>
         <!-- End Toggler -->
        <!-- 2 Menus -->
@@ -82,16 +82,72 @@
         </div>
       </div>
        <!-- End 2 Menus -->
+       <!-- Logo -->
+       <div class="container d-lg-none">
+        <div class="p-3">
+            <a class="navbar-brand" href="#">
+                <img src="images/accorderie-diois-logo.svg" width="180" alt="L'Accorderie de Die et du Diois">
+              </a>
+        </div>
+        <!-- End Logo -->
+      </div>
     </header>
 
 <!-- Begin page content -->
 <main role="main">
 
+    <!-- heading -->
+    <div class="container-fluid">
+        <div class="row article-heading">
+            <img src="images/saillans-1024.jpg" class="img-fluid" alt="Ville de Saillans">
+            <div class="container position-absolute mt-5" style="left:5%; right:5%;">
+                <h1 class="display-3 text-white text-center">Titre</h1>
+                <p class="text-white font-weight-black h5 text-center super-shadow mt-5"><span class="text-uppercase">6 avril 2020</span> | Par <a href="#">Doreen</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- end heading -->
 
+    <!-- article -->
+    <div class="container bg-white">
+        <div class="p-5">
+            <h1 class="display-4 text-center">Les permanences au Forum de Saillans</h1>
+            <p class="text-muted text-center"><span class="text-uppercase">6 avril 2020</span> | Par <a href="#">Doreen</a></p>
+            <h2 class="text-primary text-center font-weight-bold">Du nouveau pour le groupe de Saillans</h3>
+            <p>À partir de la rentrée, les permanences ne se tiendront plus à l’Oignon mais au Forum (espace numérique et social). L’horaire change lui aussi pour ne pas se chevaucher avec les leurs : ce sera de 18h00 à 19h30 tous les premiers jeudis du mois (hors vacances scolaires).</p>
+            <p>La première aura donc lieu le jeudi 6 Septembre, et vous êtes tous les bienvenus ! Il y aura un petit goûter pour vous accueillir, et vous pouvez bien sûr nous faire partager vos meilleurs gâteaux et autres gourmandises !</p>
+            <p>Exceptionnellement, le Cercle Décisionnaire aura lieu à nouveau à Saillans le mercredi 12 septembre de 18h à 20h30 pour inaugurer avec les autres groupes ce nouveau lieu d’accueil.</p>
+            <h3>À retenir</h3>
+            <p>- 18h00 à 19h30 toutes les premiers jeudis du mois (hors vacances scolaires)</p>
+            <p> - Ouverture le 6 septembre 2019</p>
+            <p>- Le Forum - 3 place de la Poste – Saillans</p>
+        </div>
+    </div><!-- Fin article -->
+
+    <div class="container-fluid bg-white">
+        <div class="container bg-light p-5">
+            <h2 class="text-primary text-center font-weight-bold mb-3">Publier un commentaire</h2>
+            <form>
+                <div class="form-group">
+                  <label for="commentname">Votre nom :</label>
+                  <input type="email" class="form-control" id="commentname">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
 
 </main><!-- Fin main -->
 
-
+<!-- Begin Footer -->
 <!-- 2 boites -->
 <div class="container-fluid">
     <div class="row">
@@ -100,15 +156,13 @@
                 <p class="h3 mb-4 pacifico text-white">Téléchargez vos chèques-temps</p>
                 <a href="#" target="_blank" class="btn btn-outline-light py-2 px-4  text-uppercase btn-sm"  rel="noreferrer noopener"><i class="fas fa-file-download pr-3"></i>Télécharger</a>
             </div>
-            
-            
         </div>
         <div class="col-12 col-lg-6 bg-primary p-4 mt-lg-3 text-center">
             <p class="h3 mb-4 pacifico text-white">Abonnez-vous !</p>
             <p class="text-white">Et recevez notre newsletter 2 fois par mois</p>
             <form>
-                <div class="form-group col-10 col-sm-8 col-md-12 mx-auto">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@example.com">
+                <div class="form-group col-12 col-md-8 col-lg-10 mx-auto">
+                    <input type="email" id="subscribe-email" class="form-control" placeholder="nom@example.com">
                 </div>
                 <button type="submit" class="btn btn-outline-light py-2 px-4 text-uppercase btn-sm"><i class="fas fa-paper-plane pr-3"></i>Je m'inscris</button>
             </form>
@@ -117,7 +171,7 @@
 </div>
 <!-- Fin des 2 boites -->
 
-<!-- Begin Footer -->
+<!-- Partenaires slider -->
 <div class="container-fluid bg-white">
     <div class="container">
       <div class="row">
@@ -126,7 +180,8 @@
       </div>
     </div>
   </div>
-  
+  <!-- End Partenaires slider -->
+
   <footer class="container-fluid bg-dark-acco">
     <div class="container">
       <div class="row">

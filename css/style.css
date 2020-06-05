@@ -8613,13 +8613,18 @@ a.text-dark-acco:hover, a.text-dark-acco:focus {
   font-weight: 900 !important;
 }
 
-.pacifico {
+.pacifico, .display-1, .display-2, .display-3, .display-4 {
   font-family: Pacifico, "Lato", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
 }
 
 .bg-beige {
   background-color: #FFE8C6;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -8930,6 +8935,22 @@ body {
 #homephotomobile a:hover, #homephotomobile a:focus {
   text-decoration: none;
   transform: scale(1.1);
+}
+
+.article-heading {
+  height: 500px;
+  overflow: hidden;
+  background-color: black;
+}
+.article-heading img {
+  opacity: 0.5;
+}
+.article-heading a:hover, .article-heading a:focus {
+  color: white;
+}
+
+.super-shadow {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 992px) {

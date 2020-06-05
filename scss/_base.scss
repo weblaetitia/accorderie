@@ -32,12 +32,17 @@
 .font-weight-black {
   font-weight: 900 !important;
 }
-.pacifico {
+.pacifico, .display-1, .display-2, .display-3, .display-4 {
   font-family: $font-family-pacifico;
   font-weight: 500;
 }
 .bg-beige {
   background-color: $beige-acco;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
 }
 
 // Reboot again
@@ -383,7 +388,22 @@ body {
     }
   }
 }
-
+// Article heading
+.article-heading {
+  height: 500px;
+  overflow: hidden;
+  background-color: black;
+  img {
+    opacity: .5;
+  }
+  a:hover, a:focus {
+    color: white;
+  }
+}
+.super-shadow {
+  text-shadow:
+    0 0 4px rgba(0, 0, 0, 0.8);
+}
 // Agenda posts cards
 .agenda-posts {
   .card {
