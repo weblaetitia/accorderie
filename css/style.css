@@ -8808,6 +8808,12 @@ body {
   position: relative;
   top: 0em;
 }
+.navbar-toggler-transformicon.burger-dark {
+  background: #212529;
+}
+.navbar-toggler-transformicon.burger-dark:before, .navbar-toggler-transformicon.burger-dark:after {
+  background: #212529;
+}
 .navbar-toggler-transformicon:before, .navbar-toggler-transformicon:after {
   display: inline-block;
   width: inherit;
@@ -8837,6 +8843,9 @@ body {
 }
 [aria-expanded=true] .navbar-toggler-transformicon:after {
   transform: rotate3d(0, 0, 1, -45deg);
+}
+[aria-expanded=true] .navbar-toggler-transformicon.burger-dark:before, [aria-expanded=true] .navbar-toggler-transformicon.burger-dark:after {
+  background: white;
 }
 
 #carousel-home {

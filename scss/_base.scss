@@ -240,6 +240,12 @@ body {
   width: 1em;
   height: .1em;
   background: white;
+  &.burger-dark {
+    background: $gray-900;
+    &:before, &:after {
+      background: $gray-900;
+    }
+  }
   transition: 0.3s;
   position: relative;
   top: 0em;
@@ -276,6 +282,12 @@ body {
     }
     &:after {
       transform: rotate3d(0, 0, 1, -45deg);
+    }
+    &.burger-dark {
+      &:before,
+      &:after {
+        background: white;
+      }
     }
   }
 }
