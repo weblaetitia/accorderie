@@ -9019,6 +9019,11 @@ form .form-control:focus::placeholder {
   color: #ced4da;
 }
 
+#subscribe-email {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 .white-divider:before {
   content: "";
   display: block;
