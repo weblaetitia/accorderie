@@ -32,9 +32,13 @@
 .font-weight-black {
   font-weight: 900 !important;
 }
-.pacifico, .display-1, .display-2, .display-3, .display-4 {
+.pacifico, .display-1, .display-2, .display-3, .display-4, .display-5 {
   font-family: $font-family-pacifico;
   font-weight: 500;
+}
+.display-5 {
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 .bg-beige {
   background-color: $beige-acco;
@@ -501,11 +505,25 @@ form {
     }
   }
 }
-// nesletter form
+// newsletter form
 #subscribe-email {
   max-width: 450px;
   margin: 0 auto;
 }
+
+// Article comments
+.box-comment {
+  border-color: $gray-600;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  &:last-child {
+    border: none !important;
+    margin-bottom: 0;
+    padding-bottom:0;
+  }
+}
+
 // FOOTER
 .white-divider {
   &:before {

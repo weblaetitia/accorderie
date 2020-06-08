@@ -8613,9 +8613,14 @@ a.text-dark-acco:hover, a.text-dark-acco:focus {
   font-weight: 900 !important;
 }
 
-.pacifico, .display-1, .display-2, .display-3, .display-4 {
+.pacifico, .display-1, .display-2, .display-3, .display-4, .display-5 {
   font-family: Pacifico, "Lato", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 .bg-beige {
@@ -9043,6 +9048,18 @@ form .form-control:focus::placeholder {
 #subscribe-email {
   max-width: 450px;
   margin: 0 auto;
+}
+
+.box-comment {
+  border-color: #6c757d;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+.box-comment:last-child {
+  border: none !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .white-divider:before {

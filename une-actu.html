@@ -101,8 +101,8 @@
         <div class="row article-heading">
             <img src="images/saillans-1024.jpg" class="img-fluid" alt="Ville de Saillans">
             <div class="container position-absolute mt-5" style="left:5%; right:5%;">
-                <h1 class="display-3 text-white text-center">Titre</h1>
-                <p class="text-white font-weight-black h5 text-center super-shadow mt-5"><span class="text-uppercase">6 avril 2020</span> | Par <a href="#">Doreen</a></p>
+                <!-- <h1 class="display-3 text-white text-center">Titre</h1>
+                <p class="text-white font-weight-black h5 text-center super-shadow mt-5"><span class="text-uppercase">6 avril 2020</span> | Par <a href="#">Doreen</a></p> -->
             </div>
         </div>
     </div>
@@ -124,26 +124,95 @@
         </div>
     </div><!-- Fin article -->
 
-    <div class="container-fluid bg-white">
-        <div class="container bg-light p-5">
-            <h2 class="text-primary text-center font-weight-bold mb-3">Publier un commentaire</h2>
-            <form>
-                <div class="form-group">
-                  <label for="commentname">Votre nom :</label>
-                  <input type="email" class="form-control" id="commentname">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+    <!-- Comment Form -->
+    <div class="container bg-light p-5">
+        <h2 class="text-primary text-center font-weight-bold mb-3">Publier un commentaire</h2>
+        <form>
+            <div class="form-group">
+              <label for="commentname">Votre nom *</label>
+              <input type="email" class="form-control" id="commentname" placeholder="Mohamed Wang">
+            </div>
+            <div class="form-group">
+              <label for="mommentemail">Votre e-mail *</label>
+              <input type="email" class="form-control" id="mommentemail" placeholder="nom@example.com">
+            </div>
+            <div class="form-group">
+              <label for="commenttext">Votre commentaire *</label>
+              <textarea class="form-control" id="commenttext" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer<i class="far fa-paper-plane ml-2"></i></button>
+          </form>
+    </div><!-- Fin Comment Form -->
+
+    <!-- Comments -->
+    <div class="container bg-white p-5">
+      <h2 class="text-primary text-center font-weight-bold mb-3">Vos commentaires</h2>
+      <div class="text-center border-bottom box-comment">
+        <p class="text-muted"><span class="text-uppercase">20 mars 2020 à 16h23</span>  | Par <a href="#">Anne-Sophie Lebreton</a></p>
+        <p class="">Merci ipsum dolor sit amet, consetetur sadipscing 
+          elitr, sed diam nonumy eirmod tempor invidunt ut 
+          labore et dolore magna aliquyam erat, sed diam 
+          voluptua. At vero eos et accusam et justo duo 
+          dolores et ea rebum. Stet clita kasd gubergren, no 
+          sea takimata sanctus est Lorem ipsum dolor sit.</p>
+      </div>
+
+      <div class="text-center border-bottom box-comment">
+        <p class="text-muted"><span class="text-uppercase">4 avril 2020 à 19h56</span>  | Par <a href="#">Pierre-Bernard-Antoine Lamotte-Chateau-Montreuil</a></p>
+        <p class="">Merci ipsum dolor sit amet, consetetur sadipscing 
+          elitr, sed diam nonumy eirmod tempor invidunt ut 
+          labore et dolore magna aliquyam erat, sed diam 
+          voluptua. At vero eos et accusam et justo duo 
+          dolores et ea rebum. Stet clita kasd gubergren, no 
+          sea takimata sanctus est Lorem ipsum dolor sit.</p>
+      </div>
+    </div><!-- Fin Comments -->
+
+    <!-- Actu Loop -->
+    <div class="container p-5">
+      <h2 class="display-5 text-center mb-4">Évènements à venir</h2>
+      <div class="card-deck row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col">
+          <div class="card border-0 mb-4">
+            <h3 class="h6 card-header bg-beige text-center font-weight-black text-primary text-uppercase">10 juin 2020</h3>
+              <img src="images/cartes-poker.jpg" class="img-fluid" alt="">
+            <div class="card-body">
+              <a href="#" class="text-dark stretched-link text-decoration-none h6 font-weight-black">Atelier jeux : apprendre à mieux se connaître</a>
+            </div>
+            <div class="card-footer bg-white text-muted">
+              <i class="far fa-clock"></i>&nbsp;17h00 <br>
+              <i class="fas fa-map-marker-alt"></i>&nbsp;ESCDD - Die
+            </div>
+          </div>
+        </div>        
+        <div class="col">
+          <div class="card border-0 mb-4">
+            <h3 class="h6 card-header text-center bg-beige font-weight-black text-primary text-uppercase">26 juin 2020</h3>
+            <img src="images/notes.jpg" class="img-fluid" alt="">
+            <div class="card-body">
+              <a href="#" class="text-dark stretched-link text-decoration-none h6 font-weight-black">Atelier d'écriture : faire son autoportrait</a>
+            </div>
+            <div class="card-footer bg-white text-muted">
+              <i class="far fa-clock"></i>&nbsp;18h00 <br>
+              <i class="fas fa-map-marker-alt"></i>&nbsp;café Andarta - Die
+            </div>
+          </div>
         </div>
-    </div>
+        <div class="col">
+          <div class="card border-0 mb-4">
+            <h3 class="h6 card-header text-center bg-beige font-weight-black text-primary text-uppercase">3 juillet 2020</h3>
+            <img src="images/chanteuse.jpg" class="img-fluid" alt="">
+            <div class="card-body">
+              <a href="#" class="text-dark stretched-link text-decoration-none h6 font-weight-black">Apprendre à chanter</a>
+            </div>
+            <div class="card-footer bg-white text-muted">
+              <i class="far fa-clock"></i>&nbsp;14h00 <br>
+              <i class="fas fa-map-marker-alt"></i>&nbsp;chez Mimi - Châtillon-en-diois
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Fin Actu Loop -->
 
 </main><!-- Fin main -->
 
