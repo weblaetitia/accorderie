@@ -121,7 +121,7 @@ body {
   }
   @include xsmall-small-medium {
     background-image: linear-gradient($orange-acco, $rouge-acco);
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -208,13 +208,14 @@ body {
       }
     }
     #primary-menu {
-      height: 70vh;
+      min-height: 70vh;
     }
 
   }
   @include mobile-landscape {
     .menus-container {
       flex-direction: row-reverse;
+      min-height: 100vh;
     }
 
     #secondary-menu {
@@ -222,7 +223,7 @@ body {
       width: 40%;
     }
     #primary-menu {
-      height: 100vh;
+      min-height: inherit;
       width: 60%;
     }
   }
