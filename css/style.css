@@ -6855,7 +6855,7 @@ body {
       flex-direction: column;
       justify-content: center !important; }
       #menus #secondary-menu .container a:first-child {
-        margin-bottom: 1em; }
+        margin-bottom: 2em; }
     #menus #primary-menu .navbar {
       display: block; }
     #menus #primary-menu .navbar-brand {
