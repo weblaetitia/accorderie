@@ -92,6 +92,10 @@ body {
   border: white;
 }
 
+.site-header {
+  position: relative;
+  z-index: $zindex-sticky;
+}
 // Menus
 #menus {
   @include home-large {
