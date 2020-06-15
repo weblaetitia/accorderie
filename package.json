@@ -12,5 +12,13 @@
     "@popperjs/core": "^2.4.2",
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1"
+  },
+  "scripts": {
+    "css-compile": "node-sass scss/style.scss --source-map true --precision 6 --output-style nested --output css/",
+    "precss-watch": "npm run css-compile",
+    "css-watch": "npm run css-compile -- --watch"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
   }
 }

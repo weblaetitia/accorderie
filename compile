@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-# Usage: ./compile
-
-sass --watch scss:css
