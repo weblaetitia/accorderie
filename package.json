@@ -1,0 +1,10 @@
+{
+  "name": "accorderie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:weblaetitia/accorderie.git",
+  "author": "Goulven Champenois <goulven.champenois@userland.fr>",
+  "contributors": "Laetitia Langlois, Gaïl Lefebvre",
+  "license": "UNLICENSED",
+  "private": true
+}
