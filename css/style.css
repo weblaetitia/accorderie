@@ -6870,20 +6870,20 @@ body {
     .actus .card {
       text-align: center; } }
 
-.actus .card-title {
+.actus .card-meta {
   background: #fff;
   color: #6c757d;
   font-size: 80%;
   padding: 0.5rem;
   margin-top: -3rem; }
   @media (max-width: 1199.98px) {
-    .actus .card-title {
+    .actus .card-meta {
       text-align: center; } }
   @media (min-width: 992px) {
-    .actus .card-title {
+    .actus .card-meta {
       padding: 0; } }
   @media (min-width: 992px) {
-    .actus .card-title {
+    .actus .card-meta {
       padding: 0;
       margin: 0 0 1rem; } }
 
