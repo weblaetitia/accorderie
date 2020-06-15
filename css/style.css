@@ -6870,6 +6870,10 @@ body {
     .actus .card {
       text-align: center; } }
 
+.actus .card-title {
+  font-weight: 900;
+  font-size: 1.25rem; }
+
 .actus .card-meta {
   background: #fff;
   color: #6c757d;
@@ -6886,6 +6890,14 @@ body {
     .actus .card-meta {
       padding: 0;
       margin: 0 0 1rem; } }
+
+.actus .card-footer {
+  background: #fff;
+  border: none; }
+
+.actus .card-link {
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .actus a i {
   font-size: .8em;
