@@ -573,6 +573,34 @@ body {
   }
 }
 
+.article {
+  .article-body {
+    background: $white;
+  }
+  .article-body-content {
+    padding: map-get($spacers, 2);
+    @include media-breakpoint-up(md) {
+      padding: map-get($spacers, 5);
+    }
+  }
+  .article-meta {
+    color: $text-muted;
+    text-align: center;
+  }
+  .article-title {
+    text-align: center;
+    @include font-size($display4-size);
+    font-family: $font-family-pacifico;
+    font-weight: $display4-weight;
+    line-height: $display-line-height;
+  }
+  .article-subtitle {
+    text-align: center;
+    font-weight: bold;
+    color: map-get($theme-colors, primary);
+  }
+}
+
 // FORMS
 form {
   .form-control {

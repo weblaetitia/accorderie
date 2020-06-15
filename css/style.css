@@ -6997,6 +6997,34 @@ body {
       .show > .callout .callout-btn.dropdown-toggle:focus {
         box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
+.article .article-body {
+  background: #fff; }
+
+.article .article-body-content {
+  padding: 0.5rem; }
+  @media (min-width: 768px) {
+    .article .article-body-content {
+      padding: 3rem; } }
+
+.article .article-meta {
+  color: #6c757d;
+  text-align: center; }
+
+.article .article-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: Pacifico, "Lato", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (max-width: 1200px) {
+    .article .article-title {
+      font-size: calc(1.475rem + 2.7vw) ; } }
+
+.article .article-subtitle {
+  text-align: center;
+  font-weight: bold;
+  color: #990132; }
+
 form .form-control {
   border-radius: 0;
   border-color: #6c757d; }
