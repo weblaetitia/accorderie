@@ -6800,7 +6800,7 @@ body {
 
 #homephotomobile {
   height: 100vh;
-  background: linear-gradient(rgba(255, 0, 0, 0.75), rgba(255, 145, 0, 0.75)), url(../images/carousel-1600-01.jpg) no-repeat center;
+  background: linear-gradient(rgba(255, 0, 0, 0.75), rgba(255, 145, 0, 0.75)), url("../images/carousel-1600-01.jpg") no-repeat center;
   background-size: cover; }
   #homephotomobile .home-logo {
     height: auto;
