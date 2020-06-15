@@ -308,8 +308,9 @@ body {
 
 
 // Carousel
-#carousel-home {
+.carousel {
   background-image: linear-gradient(#fb2600, #FE9300);
+  margin-bottom: map-get($spacers, 5);;
   .carousel-item {
     height: 500px;
     background-position: center center;
