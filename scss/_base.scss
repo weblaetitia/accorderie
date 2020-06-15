@@ -443,12 +443,35 @@ body {
 }
 
 // Actus-posts cards
-#actus {
+.actus {
   @include xsmall-small-medium {
     background-color: #fff;
   }
-}
-.actus-posts  {
+  .card {
+    margin-bottom: map-get($spacers, 2);
+    border-radius: 0;
+    border: none;
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+  }
+  .card-title {
+    background: $white;
+    color: $text-muted;
+    @include font-size(80%);
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+    padding: map-get($spacers, 2);
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+    }
+    margin-top: map-get($spacers, 5) * -1;
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+      margin: 0 0 map-get($spacers, 3);
+    }
+  }
   a {
     i {
       font-size: .8em;
