@@ -1,0 +1,42 @@
+// add deck-X and deck-BP-X classes to select the number of cards per line
+
+@for $i from 1 through $grid-columns {
+  .deck-#{$i} > .card {
+    $percentage: percentage(1 / $i);
+    @if $i == 1 {
+      $width: $percentage;
+      flex-basis: $width;
+      max-width: $width;
+      margin-left: 0;
+      margin-right: 0;
+    } @else {
+      $width: unquote("calc(#{$percentage} - #{$grid-gutter-width})");
+      flex-basis: $width;
+      max-width: $width;
+    }
+  }
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @include media-breakpoint-up($breakpoint) {
+    @for $i from 1 through $grid-columns {
+      .deck#{$infix}-#{$i} > .card {
+        $percentage: percentage(1 / $i);
+        @if $i == 1 {
+          $width: $percentage;
+          flex-basis: $width;
+          max-width: $width;
+          margin-left: 0;
+          margin-right: 0;
+        } @else {
+          $width: unquote("calc(#{$percentage} - #{$grid-gutter-width})");
+          flex-basis: $width;
+          max-width: $width;
+          margin-left: $grid-gutter-width / 2;
+          margin-right: $grid-gutter-width / 2;
+        }
+      }
+    }
+  }
+}
+
