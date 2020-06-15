@@ -418,6 +418,8 @@ body {
 // Agenda posts cards
 .agenda-posts {
   .card {
+    border: none;
+    margin-bottom: map-get($spacers, 4);
     @include media-breakpoint-up(lg) {
       min-width: 80%;
     }
@@ -432,6 +434,24 @@ body {
     .card:not(:last-child) {
       margin-right: 5px;
     }
+  }
+  .card-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: map-get($theme-colors, primary);
+    background: $beige-acco;
+    @include font-size($h6-font-size);
+  }
+  .card-link {
+    color:  map-get($theme-colors, dark);
+    text-decoration: none;
+    font-weight: bold;
+    @include font-size($h6-font-size);
+  }
+  .card-footer {
+    background: $white;
+    color: $text-muted;
   }
   a {
     transition: .1s color ease-in;
@@ -448,7 +468,7 @@ body {
     background-color: #fff;
   }
   .card {
-    margin-bottom: map-get($spacers, 2);
+    margin-bottom: map-get($spacers, 4);
     border-radius: 0;
     border: none;
     @include media-breakpoint-down(lg) {
@@ -529,6 +549,27 @@ body {
       text-decoration: none;
       color: $gray-700;
     }
+  }
+}
+
+.callout {
+  text-align: center;
+  background: map-get($theme-colors, info);
+  color: $white;
+  padding: map-get($spacers, 4);
+  @include media-breakpoint-up(lg) {
+    margin-top: map-get($spacers, 3);
+  }
+  .callout-title {
+    font-family: $font-family-pacifico;
+    @include font-size($h3-font-size);
+    margin-bottom: map-get($spacers, 4);
+  }
+  .callout-btn {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+    @include button-outline-variant(map-get($theme-colors, light));
+    padding: map-get($spacers, 2) map-get($spacers, 4);
+    text-transform: uppercase;
   }
 }
 

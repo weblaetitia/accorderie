@@ -6839,19 +6839,39 @@ body {
 .super-shadow {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.8); }
 
-@media (min-width: 992px) {
-  .agenda-posts .card {
-    min-width: 80%; } }
-
-@media (max-width: 767.98px) {
-  .agenda-posts .card {
-    min-width: 80%; } }
+.agenda-posts .card {
+  border: none;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 992px) {
+    .agenda-posts .card {
+      min-width: 80%; } }
+  @media (max-width: 767.98px) {
+    .agenda-posts .card {
+      min-width: 80%; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .agenda-posts .card:not(:first-child) {
     margin-left: 5px; }
   .agenda-posts .card:not(:last-child) {
     margin-right: 5px; } }
+
+.agenda-posts .card-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #990132;
+  background: #FFE8C6;
+  font-size: 1rem; }
+
+.agenda-posts .card-link {
+  color: #212529;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem; }
+
+.agenda-posts .card-footer {
+  background: #fff;
+  color: #6c757d; }
 
 .agenda-posts a {
   transition: .1s color ease-in; }
@@ -6863,7 +6883,7 @@ body {
     background-color: #fff; } }
 
 .actus .card {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   border-radius: 0;
   border: none; }
   @media (max-width: 1199.98px) {
@@ -6934,6 +6954,48 @@ body {
     .prev-next .nav-link:hover, .prev-next .nav-link:focus {
       text-decoration: none;
       color: #495057; }
+
+.callout {
+  text-align: center;
+  background: #fd6e21;
+  color: #fff;
+  padding: 1.5rem; }
+  @media (min-width: 992px) {
+    .callout {
+      margin-top: 1rem; } }
+  .callout .callout-title {
+    font-family: Pacifico, "Lato", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem; }
+    @media (max-width: 1200px) {
+      .callout .callout-title {
+        font-size: calc(1.3rem + 0.6vw) ; } }
+  .callout .callout-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase; }
+    .callout .callout-btn:hover {
+      color: #212529;
+      background-color: #f8f9fa;
+      border-color: #f8f9fa; }
+    .callout .callout-btn:focus, .callout .callout-btn.focus {
+      box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
+    .callout .callout-btn.disabled, .callout .callout-btn:disabled {
+      color: #f8f9fa;
+      background-color: transparent; }
+    .callout .callout-btn:not(:disabled):not(.disabled):active, .callout .callout-btn:not(:disabled):not(.disabled).active,
+    .show > .callout .callout-btn.dropdown-toggle {
+      color: #212529;
+      background-color: #f8f9fa;
+      border-color: #f8f9fa; }
+      .callout .callout-btn:not(:disabled):not(.disabled):active:focus, .callout .callout-btn:not(:disabled):not(.disabled).active:focus,
+      .show > .callout .callout-btn.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
 form .form-control {
   border-radius: 0;
