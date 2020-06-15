@@ -313,6 +313,7 @@ body {
   .carousel-item {
     height: 500px;
     background-position: center center;
+    background-repeat: no-repeat;
     &:before {
       content: '';
       position: absolute;

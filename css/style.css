@@ -7433,7 +7433,8 @@ body {
   background-image: linear-gradient(#fb2600, #FE9300); }
   #carousel-home .carousel-item {
     height: 500px;
-    background-position: center center; }
+    background-position: center center;
+    background-repeat: no-repeat; }
     #carousel-home .carousel-item:before {
       content: '';
       position: absolute;
