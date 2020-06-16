@@ -55,6 +55,22 @@ body {
   letter-spacing: .03em;
 }
 
+// Bien signaler les champs obligatoires
+// http://romy.tetue.net/signaler-les-champs-obligatoires
+label {
+  position: relative;
+  @include media-breakpoint-down(md) {
+    left: 1.2em;
+  }
+  abbr.required {
+    position: absolute;
+    left: -.75em;
+    top: .33em;
+    color: $orange-acco;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
 .btn-outline-light:focus {
   color: black;
   background: white;
@@ -236,7 +252,6 @@ body {
   z-index: 10;
   right: 0px;
   padding: 1.5em;
-  border-radius: 0;
   &:focus {
     outline: 0;
   }
@@ -452,6 +467,7 @@ body {
   .card-footer {
     background: $white;
     color: $text-muted;
+    border-top-style: dashed;
   }
   a {
     transition: .1s color ease-in;
@@ -465,11 +481,10 @@ body {
 // Actus-posts cards
 .actus {
   @include xsmall-small-medium {
-    background-color: #fff;
+    background-color: $white;
   }
   .card {
     margin-bottom: map-get($spacers, 4);
-    border-radius: 0;
     border: none;
     @include media-breakpoint-down(lg) {
       text-align: center;
@@ -601,38 +616,43 @@ body {
   }
 }
 
-// FORMS
-form {
-  .form-control {
-    border-radius: 0;
-    border-color: $gray-600;
-    &:focus {
-      border-color: $gray-400;
-      outline: 0;
-      box-shadow: none;
-      &::placeholder {
-        color:$gray-400;
+.comment-list {
+  background-color: $white;
+  padding: map-get($spacers, 3);
+  @include media-breakpoint-up(md) {
+    padding: map-get($spacers, 5);
+  }
+  .comment {
+    margin-top: 2rem;
+    & + .comment {
+      border-top: 1px solid $gray-300;
+      padding-top: 2rem;
+    }
+  }
+}
+.comment-form {
+  padding: map-get($spacers, 3) 0;
+  @include media-breakpoint-up(md) {
+    background-color: $white;
+    padding: map-get($spacers, 5);
+  }
+  form {
+    padding: map-get($spacers, 2);
+    @include media-breakpoint-up(md) {
+      background-color: map-get($theme-colors, light);
+      padding: map-get($spacers, 4);
+      .btn {
+        margin-left: 25%;
+        width: 50%;
       }
     }
   }
 }
+
 // newsletter form
 #subscribe-email {
   max-width: 450px;
   margin: 0 auto;
-}
-
-// Article comments
-.box-comment {
-  border-color: $gray-600;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  &:last-child {
-    border: none !important;
-    margin-bottom: 0;
-    padding-bottom:0;
-  }
 }
 
 // FOOTER

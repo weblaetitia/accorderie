@@ -18,7 +18,12 @@ $theme-colors: (
   "dark-acco": $dark-acco
 );
 
+// Override 
+$input-focus-border-color: rgba($orange-acco, .5);
+$input-btn-focus-color: rgba($orange-acco, .5);
+$input-focus-box-shadow: 0 0 .2rem 1px $input-btn-focus-color;
 
+$enable-rounded: false;
 $enable-responsive-font-sizes: true; // Reduce heading font sizes on mobile
 
 

@@ -126,42 +126,21 @@
         </div><!-- Fin article -->
       </div>
     
-      <!-- Comment Form -->
-      <div class="container bg-light p-3 p-md-5">
-        <h2 class="text-primary text-center font-weight-bold mb-3">Publier un commentaire</h2>
-        <form>
-          <div class="form-group">
-            <label for="commentname">Votre nom *</label>
-            <input type="email" class="form-control" id="commentname" placeholder="Mohamed Wang">
-          </div>
-          <div class="form-group">
-            <label for="mommentemail">Votre e-mail *</label>
-            <input type="email" class="form-control" id="mommentemail" placeholder="nom@example.com">
-          </div>
-          <div class="form-group">
-            <label for="commenttext">Votre commentaire *</label>
-            <textarea class="form-control" id="commenttext" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer<i class="far fa-paper-plane ml-2"></i></button>
-        </form>
-      </div><!-- Fin Comment Form -->
-    
       <!-- Comments -->
-      <div class="container bg-white p-3 p-md-5">
+      <div class="container comment-list">
         <h2 class="text-primary text-center font-weight-bold mb-3">Vos commentaires</h2>
-        <div class="text-center border-bottom box-comment">
+        <div class="comment">
           <p class="text-muted"><span class="text-uppercase">20 mars 2020 à 16h23</span>  | Par <a href="#">Anne-Sophie Lebreton</a></p>
-          <p class="">Merci ipsum dolor sit amet, consetetur sadipscing 
+          <p>Merci ipsum dolor sit amet, consetetur sadipscing 
             elitr, sed diam nonumy eirmod tempor invidunt ut 
             labore et dolore magna aliquyam erat, sed diam 
             voluptua. At vero eos et accusam et justo duo 
             dolores et ea rebum. Stet clita kasd gubergren, no 
             sea takimata sanctus est Lorem ipsum dolor sit.</p>
         </div>
-    
-        <div class="text-center border-bottom box-comment">
+        <div class="comment">
           <p class="text-muted"><span class="text-uppercase">4 avril 2020 à 19h56</span>  | Par <a href="#">Pierre-Bernard-Antoine Lamotte-Chateau-Montreuil</a></p>
-          <p class="">Merci ipsum dolor sit amet, consetetur sadipscing 
+          <p>Merci ipsum dolor sit amet, consetetur sadipscing 
             elitr, sed diam nonumy eirmod tempor invidunt ut 
             labore et dolore magna aliquyam erat, sed diam 
             voluptua. At vero eos et accusam et justo duo 
@@ -169,6 +148,28 @@
             sea takimata sanctus est Lorem ipsum dolor sit.</p>
         </div>
       </div><!-- Fin Comments -->
+    
+      <!-- Comment Form -->
+      <div class="container comment-form">
+        <h2 class="text-primary text-center font-weight-bold mb-3">Publier un commentaire</h2>
+        <form>
+          <div class="form-group">
+            <label for="commenttext">Votre commentaire <abbr class="required" aria-hidden="true" title="requis">*</abbr></label>
+            <textarea class="form-control" id="commenttext" required autofocus rows="3"></textarea>
+          </div>
+          <div class="row">
+            <div class="form-group col-12 col-md-6">
+              <label for="commentname">Votre nom <abbr class="required" aria-hidden="true" title="requis">*</abbr></label>
+              <input type="email" class="form-control" id="commentname" required placeholder="Mohamed Wang">
+            </div>
+            <div class="form-group col-12 col-md-6">
+              <label for="mommentemail">Votre e-mail <abbr class="required" aria-hidden="true" title="requis">*</abbr></label>
+              <input type="email" class="form-control" id="mommentemail" required placeholder="nom@example.com">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Envoyer<i class="far fa-paper-plane ml-2"></i></button>
+        </form>
+      </div><!-- Fin Comment Form -->
     
       <!-- Actu Loop -->
       <div class="container py-4">
