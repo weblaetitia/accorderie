@@ -568,6 +568,9 @@ label {
 }
 
 .callout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   background: map-get($theme-colors, info);
   color: $white;
@@ -585,6 +588,7 @@ label {
     @include button-outline-variant(map-get($theme-colors, light));
     padding: map-get($spacers, 2) map-get($spacers, 4);
     text-transform: uppercase;
+    margin: 0 auto;
   }
 }
 
