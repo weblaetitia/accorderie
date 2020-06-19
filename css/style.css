@@ -7042,22 +7042,25 @@ label {
   background: #fff;
   border: none;
   border-top: 1px dashed #ced4da; }
+  .actus .card-footer .card-link {
+    font-weight: bold;
+    text-transform: uppercase; }
 
-.actus .card-link {
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.actus a i {
+.arrow-left i,
+.arrow-right i {
   font-size: .8em;
   position: relative;
   bottom: 1px;
   transition: .1s padding ease-in;
-  text-indent: .5em;
-  padding-left: 0;
-  padding-right: .5em; }
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
 
-.actus a:hover i {
-  padding-left: .5em;
+.arrow-left:hover i, .arrow-left:focus i {
+  padding-left: 0;
+  padding-right: 1em; }
+
+.arrow-right:hover i, .arrow-right:focus i {
+  padding-left: 1em;
   padding-right: 0; }
 
 .prev-next {

@@ -501,23 +501,39 @@ label {
      background: $white;
      border: none;
      border-top: 1px dashed $gray-400;
-  }
-  .card-link {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  a {
-    i {
-      font-size: .8em;
-      position: relative;
-      bottom: 1px;
-      transition: .1s padding ease-in;
-      text-indent: .5em;
-      padding-left: 0;
-      padding-right: .5em;
+    .card-link {
+      font-weight: bold;
+      text-transform: uppercase;
     }
-    &:hover i {
-      padding-left: .5em;
+  }
+}
+
+$shift: 1em;
+.arrow-left,
+.arrow-right {
+  i {
+    font-size: .8em;
+    position: relative;
+    bottom: 1px;
+    transition: .1s padding ease-in;
+    padding-left: #{$shift / 2};
+    padding-right: #{$shift / 2};
+  }
+}
+.arrow-left {
+  &:hover,
+  &:focus {
+    i {
+      padding-left:  0;
+      padding-right: $shift;
+    }
+  }
+}
+.arrow-right {
+  &:hover,
+  &:focus {
+    i {
+      padding-left:  $shift;
       padding-right: 0;
     }
   }
