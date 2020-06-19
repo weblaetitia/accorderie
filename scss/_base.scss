@@ -584,26 +584,54 @@ label {
     background: $white;
   }
   .article-body-content {
+    display: flex;
+    flex-flow: column wrap;
     padding: map-get($spacers, 2);
     @include media-breakpoint-up(md) {
       padding: map-get($spacers, 5);
     }
-  }
-  .article-meta {
-    color: $text-muted;
-    text-align: center;
-  }
-  .article-title {
-    text-align: center;
-    @include font-size($display4-size);
-    font-family: $font-family-pacifico;
-    font-weight: $display4-weight;
-    line-height: $display-line-height;
-  }
-  .article-subtitle {
-    text-align: center;
-    font-weight: bold;
-    color: map-get($theme-colors, primary);
+    .article-meta {
+      color: $text-muted;
+      text-align: center;
+      order: -1;
+      position: relative;
+      top: -5em;
+      margin-bottom: -6em;
+      padding: map-get($spacers, 3) map-get($spacers, 5);
+      background: $white;
+      @include media-breakpoint-down(sm) {
+        top: -2.5em;
+        margin-bottom: -2.5em;
+      }
+      .article-date {
+        text-transform: uppercase;
+      }
+      .article-author {
+        @include media-breakpoint-down(sm) {
+          display: block;
+        }
+        @include media-breakpoint-up(md) {
+          padding-left: .65em;
+          border-left: 1px solid $text-muted;
+          margin-left: .5em;
+        }
+      }
+    }
+    .article-title {
+      text-align: center;
+      @include font-size($display4-size);
+      font-family: $font-family-pacifico;
+      font-weight: $display4-weight;
+      line-height: $display-line-height;
+      position: relative;
+      z-index: 1;
+    }
+    .article-subtitle {
+      text-align: center;
+      font-weight: bold;
+      color: map-get($theme-colors, primary);
+      margin-bottom: map-get($spacers, 3);
+    }
   }
 }
 
@@ -620,9 +648,25 @@ label {
       padding-top: 2rem;
     }
   }
+  .comment-meta {
+    color: $text-muted;
+  }
+  .comment-date {
+    text-transform: uppercase;
+  }
+  .comment-author {
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+    @include media-breakpoint-up(md) {
+      padding-left: .65em;
+      border-left: 1px solid $text-muted;
+      margin-left: .5em;
+    }
+  }
 }
 .comment-form {
-  padding: map-get($spacers, 3) 0;
+  padding: map-get($spacers, 3) $grid-gutter-width / 2;
   @include media-breakpoint-up(md) {
     background-color: $white;
     padding: map-get($spacers, 5);
@@ -631,7 +675,7 @@ label {
     padding: map-get($spacers, 2);
     @include media-breakpoint-up(md) {
       background-color: map-get($theme-colors, light);
-      padding: map-get($spacers, 4);
+      padding: map-get($spacers, 4) map-get($spacers, 5);
       .btn {
         margin-left: 25%;
         width: 50%;
