@@ -500,6 +500,7 @@ label {
   .card-footer {
      background: $white;
      border: none;
+     border-top: 1px dashed $gray-400;
   }
   .card-link {
     font-weight: bold;
