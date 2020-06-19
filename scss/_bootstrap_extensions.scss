@@ -1,18 +1,19 @@
 // add deck-X and deck-BP-X classes to select the number of cards per line
-
-@for $i from 1 through $grid-columns {
-  .deck-#{$i} > .card {
-    $percentage: percentage(1 / $i);
-    @if $i == 1 {
-      $width: $percentage;
-      flex-basis: $width;
-      max-width: $width;
-      margin-left: 0;
-      margin-right: 0;
-    } @else {
-      $width: unquote("calc(#{$percentage} - #{$grid-gutter-width})");
-      flex-basis: $width;
-      max-width: $width;
+@for $i from 2 through $grid-columns {
+  $percentage: percentage(1 / $i);
+  $calc: calc(#{$percentage} - #{$card-deck-margin * 2});
+  .deck-#{$i} {
+    // Force flex display, even on small screens
+    display: flex;
+    flex-flow: row wrap;
+    margin-left:  -$card-deck-margin;
+    margin-right: -$card-deck-margin;
+    & > .card {
+      flex-basis: $calc;
+      max-width:  $calc;
+      // Cards have no left/right margins on small screens by default
+      margin-left:  $card-deck-margin;
+      margin-right: $card-deck-margin;
     }
   }
 }
@@ -20,20 +21,29 @@
   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
   @include media-breakpoint-up($breakpoint) {
     @for $i from 1 through $grid-columns {
-      .deck#{$infix}-#{$i} > .card {
-        $percentage: percentage(1 / $i);
-        @if $i == 1 {
-          $width: $percentage;
-          flex-basis: $width;
-          max-width: $width;
-          margin-left: 0;
+      $percentage: percentage(1 / $i);
+      $calc: calc(#{$percentage} - #{$card-deck-margin * 2});
+      @if $i == 1 {
+        .deck#{$infix}-#{$i} {
+          margin-left:  0;
           margin-right: 0;
-        } @else {
-          $width: unquote("calc(#{$percentage} - #{$grid-gutter-width})");
-          flex-basis: $width;
-          max-width: $width;
-          margin-left: $grid-gutter-width / 2;
-          margin-right: $grid-gutter-width / 2;
+          & > .card {
+            flex-basis: $percentage;
+            max-width:  $percentage;
+            margin-left:  0;
+            margin-right: 0;
+          }
+        }
+      } @else {
+        .deck#{$infix}-#{$i} {
+          margin-left:  -$card-deck-margin;
+          margin-right: -$card-deck-margin;
+          & > .card {
+            flex-basis: $calc;
+            max-width:  $calc;
+            margin-left:  $card-deck-margin;
+            margin-right: $card-deck-margin;
+          }
         }
       }
     }
