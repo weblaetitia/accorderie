@@ -435,20 +435,6 @@ label {
   .card {
     border: none;
     margin-bottom: map-get($spacers, 4);
-    @include media-breakpoint-up(lg) {
-      min-width: 80%;
-    }
-    @include media-breakpoint-down(sm) {
-      min-width: 80%;
-    }
-  }
-  @include media-breakpoint-only(md) {
-    .card:not(:first-child) {
-      margin-left: 5px;
-    }
-    .card:not(:last-child) {
-      margin-right: 5px;
-    }
   }
   .card-header {
     text-align: center;
