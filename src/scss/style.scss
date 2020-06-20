@@ -2,6 +2,13 @@
 // 2 - Load bootstrap sass files.
 // 3 - Load custom app sass files.
 
+
+/* --------------------------------------------------------
+   Font awesome
+   -------------------------------------------------------- */
+   @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+   @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+
 /* --------------------------------------------------------
    Core functions
    -------------------------------------------------------- */
