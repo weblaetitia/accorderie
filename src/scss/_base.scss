@@ -325,7 +325,7 @@ label {
 // Carousel
 .carousel {
   background-image: linear-gradient(#fb2600, #FE9300);
-  margin-bottom: map-get($spacers, 5);;
+  margin-bottom: map-get($spacers, 5);
   .carousel-item {
     height: 500px;
     background-position: center center;
@@ -370,7 +370,17 @@ label {
       opacity: 1;
     }
   }
-} // end #carousel-home
+}
+
+// Adjust carousel on homepage
+.homepage .carousel-container {
+  // p-0 d-none d-lg-block
+  padding: 0;
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
 
 // homePhotoMobile
 #homephotomobile {
