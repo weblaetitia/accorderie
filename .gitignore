@@ -1,5 +1,6 @@
 .DS_Store
 .sass-cache
+dist/
 node_modules/
 yarn-error.log
 .DS_Store

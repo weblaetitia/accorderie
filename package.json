@@ -15,13 +15,69 @@
   },
   "scripts": {
     "//": " --- GENERAL ---",
-    "reinstall": "rimraf node_modules && yarn cache clean && yarn install",
-    "css-compile": "node-sass scss/style.scss --source-map true --precision 6 --output-style nested --output css/",
-    "precss-watch": "npm run css-compile",
-    "css-watch": "npm run css-compile -- --watch"
+    "install": "rimraf node_modules && yarn cache clean && yarn install",
+    "dev": "npm-run-all --parallel serve watch",
+    "build": "yarn run css:prod",
+
+    "//": " --- ASSETS --- ",
+    "assets:compress": "imagemin-inplace dist/**/*",
+
+    "//": " --- CSS --- ",
+    "css:dev": "node-sass src/scss/style.scss --output-style nested --source-map true --output dist/css/",
+    "css:prod": "node-sass src/scss/style.scss --output-style compressed | postcss -u autoprefixer -b 'last 2 versions' > dist/css/style.css",
+
+    "//": " --- JS --- ",
+    "js:jquery": "cp node_modules/jquery/dist/jquery.slim.min.js dist/js/",
+    "js:popper": "cp node_modules/@popperjs/core/dist/umd/popper.min.js dist/js/",
+    "js:bootstrap": "cp node_modules/bootstrap/dist/js/bootstrap.min.js dist/js/",
+
+    "//": " --- BUILD (GENERIC) --- ",
+    "clean": "rimraf dist",
+    "mkdirs": "mkdir -p dist/js && mkdir -p dist/css && mkdir -p dist/webfonts",
+    "copy:html": "find src -name '*.html' -type f -exec cp {} dist \\;",
+    "copy:assets": "cp -r assets/* dist",
+    "copy:fonts": "cp -r node_modules/@fortawesome/fontawesome-free/webfonts/* dist/webfonts",
+    "copy:vendorjs": "npm-run-all js:*",
+    "copy": "npm-run-all copy:*",
+    "prebuild": "yarn run clean && yarn run mkdirs && yarn run copy",
+
+    "//": " --- BUILD (DEVELOPMENT) --- ",
+    "prebuild:dev": "yarn run prebuild",
+    "build:dev": "yarn run css:dev",
+
+    "//": " --- BUILD (PRODUCTION) --- ",
+    "prebuild:prod": "yarn run prebuild",
+    "build:prod": "yarn run css:prod",
+    "postbuild:prod": "yarn run assets:compress && yarn run hash",
+
+    "//": " --- HASHING --- ",
+    "hash": "hashmark **/(style|jquery|popper|bootstrap).* -d md5 -l 8 -c dist '{dir}/{name}.{hash}{ext}' | replaceinfiles -S -s dist/**/*.html",
+    "hash:removecss": "rm dist/css/style.css",
+    "hash:removejs": "find dist/js -name '*\\.min\\.js' -delete",
+    "posthash": "npm-run-all hash:*",
+
+    "//": " --- SERVING --- ",
+    "kill": "lsof -n -i:8080 | grep LISTEN | awk '{print $2}' | xargs kill -9",
+    "preserve": "yarn run build:dev && yarn run kill",
+    "serve": "browser-sync start -s --files 'dist/**/*.(js|css|html)' --ss 'dist' --port 8080 --reload-debounce 500",
+
+    "//": " --- WATCHING --- ",
+    "watch:assets": "onchange 'assets/**/*' -- yarn run copy:assets",
+    "watch:html": "onchange 'src/**/*.html' -- yarn run copy:html",
+    "watch:css": "onchange 'src/**/*.scss' -- yarn run css:dev",
+    "watch": "npm-run-all --parallel watch:*"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.1",
+    "browser-sync": "^2.26.7",
+    "hashmark": "^5.0.0",
+    "imagemin-cli-inplace": "^3.0.0",
     "node-sass": "^4.14.1",
-    "rimraf": "^3.0.2"
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "postcss-cli": "^7.1.1",
+    "replaceinfiles": "^1.1.4",
+    "rimraf": "^3.0.2",
+    "uglify-js": "^3.9.4"
   }
 }
