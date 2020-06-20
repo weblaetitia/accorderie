@@ -6,9 +6,6 @@ $lg-breakpoint: map-get($grid-breakpoints, lg) - 1;
   @media screen and (max-width: $lg-breakpoint) and (orientation: landscape) { @content; }
 }
 
-.vh-100 {
-  height: 100vh;
-}
 .height-90 {
   height: 90%;
 }
@@ -28,11 +25,6 @@ $lg-breakpoint: map-get($grid-breakpoints, lg) - 1;
 }
 .bg-beige {
   background-color: $beige-acco;
-}
-
-.img-fluid {
-  width: 100%;
-  height: auto;
 }
 
 // Reboot again
