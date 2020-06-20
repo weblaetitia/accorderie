@@ -1,11 +1,9 @@
-// add your custom styles here
-// to learn more about SASS, visit sass-lang.com
-
+$lg-breakpoint: map-get($grid-breakpoints, lg) - 1;
 @mixin mobile-portrait {
-  @media screen and (max-width: 991px) and (orientation: portrait) { @content; }
+  @media screen and (max-width: $lg-breakpoint) and (orientation: portrait) { @content; }
 }
 @mixin mobile-landscape {
-  @media screen and (max-width: 991px) and (orientation: landscape) { @content; }
+  @media screen and (max-width: $lg-breakpoint) and (orientation: landscape) { @content; }
 }
 
 .vh-100 {
