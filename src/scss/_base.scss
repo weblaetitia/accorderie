@@ -382,9 +382,13 @@ label {
   }
 }
 
-// homePhotoMobile
-#homephotomobile {
+.splash {
+  padding-left: map-get($spacers, 5);
+  padding-right: map-get($spacers, 5);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background:
     /* top, transparent red */
     linear-gradient(
@@ -393,11 +397,15 @@ label {
     ),
     url('../images/carousel-1600-01.jpg') no-repeat center ;
   background-size: cover;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
 
-  .home-logo {
+  .splash-logo {
+    display: block;
     height: auto;
     max-width: 100%;
-    margin-top: 40px;
+    margin: 40px auto map-get($spacers, 5);
     @include media-breakpoint-down(sm) {
       width: 280px;
     }
@@ -405,26 +413,37 @@ label {
       width: 410px;
     }
   }
-  .home-picto {
-    @include media-breakpoint-down(sm) {
-      width: 60px;
-      height: auto;
-    }
-    @include media-breakpoint-up(sm) {
-      width: 80px;
-      height: auto;
-    }
-  }
-  a {
-    transition: .5s;
+  .splash-link {
     display: block;
+    transition: .2s;
     &:hover,
     &:focus {
       text-decoration: none;
       transform: scale(1.1);
     }
+    .splash-picto {
+      display: block;
+      margin: 0 auto map-get($spacers, 3);
+      @include media-breakpoint-down(sm) {
+        width: 60px;
+        height: auto;
+      }
+      @include media-breakpoint-up(sm) {
+        width: 80px;
+        height: auto;
+      }
+    }
+    .splash-text {
+      color: $white;
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      @include font-size($h6-font-size);
+    }
   }
 }
+
 // Article heading
 .article-heading {
   height: 500px;
