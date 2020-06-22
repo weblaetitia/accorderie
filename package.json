@@ -15,7 +15,7 @@
   },
   "scripts": {
     "//": " --- GENERAL ---",
-    "install": "rimraf node_modules && yarn cache clean && yarn install",
+    "setup": "rimraf node_modules && yarn install",
     "dev": "npm-run-all --parallel serve watch",
     "build": "yarn run css:prod",
 

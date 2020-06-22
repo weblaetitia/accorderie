@@ -5,7 +5,7 @@
 Ce projet utilise **Yarn** pour la gestion des dépendances et des commandes. Pour participer :
 
 1. Installer [Yarn](https://classic.yarnpkg.com/en/docs/install/)
-2. Taper `yarn run install` pour récupérer les dépendances.
+2. Taper `yarn run setup` pour récupérer les dépendances.
 
 ## Utilisation
 
