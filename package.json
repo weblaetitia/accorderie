@@ -51,7 +51,7 @@
     "postbuild:prod": "yarn run assets:compress && yarn run hash",
 
     "//": " --- HASHING --- ",
-    "hash": "hashmark **/(style|jquery|popper|bootstrap).* -d md5 -l 8 -c dist '{dir}/{name}.{hash}{ext}' | replaceinfiles -S -s dist/**/*.html",
+    "hash": "hashmark **/{style,jquery,popper,bootstrap}.* -d md5 -l 8 -c dist '{dir}/{name}.{hash}{ext}' | replaceinfiles -S -s dist/**/*.html",
     "hash:removecss": "rm dist/css/style.css",
     "hash:removejs": "find dist/js -name '*\\.min\\.js' -delete",
     "posthash": "npm-run-all hash:*",
